@@ -19,32 +19,40 @@ body {
 
 header {
   background-image: url(../img/Imagen-Header.jpg);
-  height: 200px;
+  height: 150px;
   width: 100%;
   background-size: cover;
 }
 
-header img.logo {
+.logo {
   width: 150px;
-  height: 150px;
-  margin: 10px;
+  height: 140px;
 }
 
-ul {
-  text-align: end;
+.navbar-toggler{
+  border: 2px solid #b88a44;
 }
 
-header nav ul li {
-  list-style: none;
-  display: inline;
-  justify-content: space-between;
-  padding: 5px;
-}
 
-header nav ul li a {
-  text-decoration: none;
-  color: white;
+.nav-link{
   font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: white;
+}
+
+.nav-link:hover{
+  color: #b88a44;
+}
+
+.navbar-collapse{
+  justify-content: flex-end;
+  flex-grow: 0;
+}
+
+.dropdown-menu {
+  background-color: #b88a44;
+  border: 2px solid #d9c485;
+  font-family: "Noto Serif TC", serif;
   font-size: 20px;
 }
 
@@ -53,7 +61,7 @@ header nav ul li a {
 h1 {
   font-family: "Berkshire Swash", cursive;
   font-size: 55px;
-  color: #b88a44;
+  color: #d9c485;
   text-align: center;
   padding-top: 15px;
 }
@@ -141,7 +149,7 @@ h1 {
 .imagen-casas:hover {
   width: 250px;
   transition: 2s;
-  border: 2px outset #434b4d;
+  border: 2px outset #4d2818;
 }
 
 .boton-casas {
@@ -183,7 +191,7 @@ h3 {
 .imagen-fondo {
   width: 650px;
   height: 450px;
-  border: 3px solid #434b4d;
+  border: 3px solid #4d2818;
 }
 
 
@@ -213,7 +221,7 @@ h3 {
   width: 300px;
   height: 300px;
   margin: 5px;
-  border: 4px solid #434b4d;
+  border: 4px solid #4d2818;
 }
 
 .parrafos-personajes {
@@ -236,7 +244,7 @@ h3 {
 iframe {
   width: 1000px;
   height: 500px;
-  border: 4px solid #434b4d;
+  border: 4px solid #4d2818;
 }
 
 .parrafo-precuela {
@@ -376,7 +384,7 @@ iframe {
 .input-contacto {
   width: 300px;
   height: 30px;
-  border: 2px solid #434b4d;
+  border: 2px solid #4d2818;
 }
 
 label {
@@ -387,7 +395,7 @@ label {
 textarea {
   width: 300px;
   height: 315px;
-  border: 2px solid #434b4d;
+  border: 2px solid #4d2818;
 }
 .form-contacto--boton{
   display: flex;
