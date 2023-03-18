@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="../img/Logo Navegador.jpg"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../style/style.css" />
+    <title>Contacto</title>
+  </head>
+  <body>
+    <header>
+      <!--Logo-->
+      <img class="logo" src="../img/Logo Principal.jpg" alt="logo" />
+      <!--Menú de Navegación-->
+      <nav>
+        <ul>
+          <li>
+            <a href="../index.html">INICIO</a>
+          </li>
+          <li>
+            <a href="casas.html">CASAS</a>
+          </li>
+          <li>
+            <a href="precuela.html">PRECUELA</a>
+          </li>
+          <li>
+            <a href="merchandising.html">MERCHANDISING</a>
+          </li>
+          <li>
+            <a href="contacto.html">CONTACTO</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!--Contacto y mapa-->
+    <div class="contacto-mapa">
+      <h2 class="titulo-ventas">Ventas</h2>
+      <p class="parrafo-ventas">Dirección: Castelli 6200, Vte. López</p>
+      <iframe
+        class="mapa"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3286.9385598757212!2d-58.54208468417685!3d-34.52978456109826!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb0bba6e749b1%3A0x619f55b1d8c27f2b!2sJuan%20Jos%C3%A9%20Castelli%206200%2C%20B1606ACF%20Carapachay%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1676122075672!5m2!1ses!2sar"
+        width="600"
+        height="450"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </div>
+
+    <!--Formulario de consultas-->
+    <div class="formulario-ventas">
+      <h2 class="titulo-ventas">Envianos tu consulta</h2>
+    </div>
+    
+      <form class="form-contacto" action="">
+        <label for="nombre">Nombre</label>
+        <input class="input-contacto" type="text" id="nombre" placeholder="Ingrese su nombre aquí" />
+        <label for="contacto">Contacto</label>
+        <input class="input-contacto" type="text" id="contacto" placeholder="Ingrese su contacto" />
+        <label for="email">Email</label>
+        <input class="input-contacto"
+          type="email"
+          name=""
+          id="email"
+          placeholder="Ingrese su mail aquí"
+        />
+        <label for="consulta">Consulta</label>
+        <textarea name="" id="consulta" cols="30" rows="10"></textarea>
+      
+      <div class="form-contacto--boton">
+        <form class="form-compras" action="" method="get">
+          <input class="boton-compras" type="submit" value="Enviar" />
+        </form>
+
+        <form class="form-compras" action="" method="get">
+          <input class="boton-compras" type="submit" value="Borrar" />
+        </form>
+      </div>
+    </form>
+
+    <!--Footer-->
+    <footer>
+      <div class="iconos-footer">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
+          <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1"  />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <rect x="4" y="4" width="16" height="16" rx="4" />
+          <circle cx="12" cy="12" r="3" />
+          <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
+        </svg>
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+          <rect x="3" y="5" width="18" height="14" rx="2" />
+          <polyline points="3 7 12 13 21 7" />
+        </svg>
+        <p>2023 - Diseño y Desarrollo: Jennifer Kischner 💻</p>
+      </div>
+    </footer>
+  </body>
+</html>
