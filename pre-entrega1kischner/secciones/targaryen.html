@@ -9,32 +9,61 @@
       href="../img/Logo Targaryen.jpg"
       type="image/x-icon"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="../style/style.css" />
     <title>Casa Targaryen</title>
   </head>
   <body>
+    <!--Encabezado-->
+
     <header>
-      <!--Logo-->
-      <img class="logo" src="../img/Logo Principal.jpg" alt="logo" />
       <!--Menú de Navegación-->
-      <nav>
-        <ul>
-          <li>
-            <a href="../index.html">INICIO</a>
-          </li>
-          <li>
-            <a href="casas.html">CASAS</a>
-          </li>
-          <li>
-            <a href="precuela.html">PRECUELA</a>
-          </li>
-          <li>
-            <a href="merchandising.html">MERCHANDISING</a>
-          </li>
-          <li>
-            <a href="contacto.html">CONTACTO</a>
-          </li>
-        </ul>
+
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <img class="logo" src="../img/Logo Principal.jpg" alt="logo" />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="casas.html"
+                  >CASAS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="precuela.html"
+                  >PRECUELA</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="merchandising.html">MERCHANDISING</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
     <main>
@@ -77,217 +106,268 @@
       <section class="contenedor-imagenes-personajes">
         <!--Imagenes y datos del personaje-->
         <div class="imagen-personaje-serie">
-        <img
-          class="imagen-personajes"
-          src="../img/Aerys-II-Targaryen.jpg"
-          alt="Aerys Targaryen"
-        />
-        <p class="parrafos-personajes">
-          Aerys Targaryen: Último Rey Targaryen que gobernó sobre Poniente.
-          Aerys II perdió su nombre para ser conocido por toda la población como
-          El Rey Loco. Es asesinado por Jaime Lannister quien lo apuñala por la
-          espalda.
-        </p>
-      </div>
-      <div class="imagen-personaje-serie">
-        <img
-          class="imagen-personajes"
-          src="../img/Rhaegar Targaryen .jpg"
-          alt="Rhaegar Targaryen "
-        />
-        <p class="parrafos-personajes">
-          Rhaegar Targaryen: Hijo y heredero de Aerys II Targaryen. Se divorció
-          de Elia Martell, para casarse en secreto con Lyanna Stark. Rhaegar
-          muere combatiendo en la batalla del Tridente a manos de Robert
-          Baratheon
-        </p>
-      </div>
-      <div class="imagen-personaje-serie">
-        <img
-          class="imagen-personajes"
-          src="../img/Viserys Targaryen.jpg"
-          alt="Viserys Targaryen"
-        />
-        <p class="parrafos-personajes">
-          Viserys Targaryen: Fue el segundo hijo del rey Aerys II Targaryen.
-          Arregló el matrimonio de su hermana Daenerys con Khal Drogo.
-          Obsesionado toda su vida con recuperar el Trono de Hierro, lo que le
-          ha llevado a deambular por todas las Ciudades Libres hasta quedarse
-          sin dinero, por lo que es apodado como «El Rey Mendigo». Amenaza a
-          Daenerys con matar al hijo que lleva en el vientre si Drogo no le da
-          la corona que le prometio. Drogo exclama que le otorgará esa corona;
-          en ese momento, sus jinetes de sangre inmovilizan a Viserys, mientras
-          Drogo vuelca un caldero de oro fundido sobre su cabeza, matándolo
-        </p>
-      </div>
-      <div class="imagen-personaje-serie">
-        <img
-          class="imagen-personajes"
-          src="../img/Daenerys Targaryen.jpg"
-          alt="Daenerys Targaryen"
-        />
-        <p class="parrafos-personajes">
-          Daenerys Targaryen: Se convierte en la heredera de la dinastía
-          Targaryen tras el asesinato de su hermano y planea reclamar ella misma
-          el Trono de Hierro, considerándolo su derecho de nacimiento. Daenerys,
-          embarazada, pierde a su marido Khal Drogo y a su hijo, pero la magia
-          de la sangre le permite incubar tres de sus huevos de dragón,
-          Viserion, Rhaegal y Drogon. Se convierte en Daenerys de la Tormenta,
-          la Primera de su nombre, Reina de Meereen, Reina de los ándalos, los
-          rhoynar y los primeros hombres, Señora de los Siete Reinos, Protectora
-          del Reino, Khaleesi del Gran Mar de Hierba, La que No Arde, Madre de
-          Dragones. Daenerys Targaryen muere asesinada a manos de Jon Snow en la
-          sala del trono, tras ejecutar un verdadero genocidio en Desembarco del
-          Rey y llegar al Trono de Hierro.
-        </p>
-      </div>
-      <div class="imagen-personaje-serie">
-        <img
-          class="imagen-personajes"
-          src="../img/Khal Drogo.jpg"
-          alt="Khal Drogo"
-        />
-        <p class="parrafos-personajes">
-          Khal Drogo: Hijo de Khal Bharbo, lo que lo convirtió en el khalakka
-          (heredero en el idioma dothraki ficticio de la saga) de su padre y de
-          su khalasar (su tribu). Es un Khal temido y respetado. Drogo quedá mal
-          herido después de un enfrentamiento con Khal Ogo. Pero pese a los
-          cuidados de la mujer, Drogo siguió empeorando y pronto cayó de su
-          caballo, símbolo para los Dothraki de que ya no podía seguir
-          liderándolos, Daenerys le pidió a la maegi que sanara a su esposo a
-          cambio de la vida de su hijo nonato. Tras un ritual con magia de
-          sangre, Daenerys descubre que ha perdido al niño que esperaba y a
-          Drogo en estado catatónico. Incapaz de devolver a la normalidad a su
-          marido, y de verlo en ese estado, Daenerys asesina a Drogo
-          asfixiándolo con una almohada.
-        </p>
-      </div>
-      <div class="imagen-personaje-serie">
-        <img
-          class="imagen-personajes"
-          src="../img/Dragon Viserion.jpg"
-          alt="Viserion"
-        />
-        <p class="parrafos-personajes">
-          Viserion: Es el más cariñoso y mimado de los tres dragones, también el
-          más confiado. Sus escamas son de color crema, duras y fuertes. Sus
-          cuernos, huesos de las alas y columna vertebral son de color dorado,
-          al igual que sus ojos. Su llama es de color oro pálido plagado de rojo
-          y naranja. Se dice además que su rugido puede enviar a un centenar de
-          leones corriendo. Sus dientes son de color negro brillante. Viserion
-          es asesinado con una lanza de hielo por el Rey de la Noche,
-          hundiéndose en las frías aguas del lago congelado. Poco después el Rey
-          de la Noche lo revive como espectro y lo convierte en su montura para
-          derretir el Muro y avanzar hacia el sur.
-        </p>
-      </div>
-      <div class="imagen-personaje-serie">
-        <img
-          class="imagen-personajes"
-          src="../img/Dragon Rhaegal.jpg"
-          alt="Rhaegal"
-        />
-        <p class="parrafos-personajes">
-          Rhaegal: Es el más pequeño y perezoso de los tres dragones, pues
-          siempre está enroscado y durmiendo plácidamente. Sus escamas son de
-          color verde y bronce, al igual que sus ojos. Su llama es de un fuego
-          amarillo-naranja atravesado por vetas de color verde. Sus dientes y
-          garras son negros. Mal herido, por la llamada "Danza de Dragones"
-          donde muere su hermano ahora caminante blanco Viserion, llega volando
-          a Rocadragón donde es embestido por tres lanzas gigantes propulsadas
-          por Euron Greyjoy quien los esperaba con su flota desde un punto de la
-          isla. Después de esos tres impactos, Rhaegal cae muerto al mar, ante
-          la mirada atónita de su madre.
-        </p>
-      </div>
-      <div class="imagen-personaje-serie">
-        <img
-          class="imagen-personajes"
-          src="../img/Dragon Drogo.jpg"
-          alt="Drogon"
-        />
-        <p class="parrafos-personajes">
-          Drogon: Es el más grande y agresivo de los tres dragones. Sus escamas
-          son negras, duras y fuertes. Sus cuernos y columna vertebral son del
-          color de la sangre y sus ojos son de un rojo ardiente. Su llama es de
-          color negro con vetas rojas. Se dice además que el calor de su fuego
-          puede sentirse a treinta metros de distancia. Su aleteo suena como una
-          tormenta y su sangre es negra y espesa. Drogon llega al salón del
-          trono de hierro, donde se encuentra con su madre Daenerys, luego de
-          que Jon Snow le clavara una espada en su corazón. Drogon al darse
-          cuenta de que su madre esta muerta, devastado, derrite con sus llamas
-          el Trono de Hierro; para después llevarse su cadáver entre sus garras.
-        </p>
-      </div>
-      <div class="imagen-personaje-serie">
-        <img
-          class="imagen-personajes"
-          src="../img/Gusano Gris.jpg"
-          alt="Gusano Gris"
-        />
-        <p class="parrafos-personajes">
-          Gusano Gris: Inmaculado comprado y liberado por Daenerys Targaryen en
-          Astapor. Luego de su liberación fue elegido como comandante de los
-          Inmaculados al servicio de Daenerys y se convirtió en uno de los
-          consejeros de confianza de la reina.
-        </p>
-      </div>
-      <div class="imagen-personaje-serie">
-        <img
-          class="imagen-personajes"
-          src="../img/Missandei.jpg"
-          alt="Missandei"
-        />
-        <p class="parrafos-personajes">
-          Missandei: Antigua esclava que se convierte en doncella, traductora y
-          compañera leal de Daenerys Targaryen. Es originaria de Naath. Muere
-          decapitada a manos de la Montaña por orden de Cersei Lannister
-        </p>
-      </div>
-      <div class="imagen-personaje-serie">
-        <img
-          class="imagen-personajes"
-          src="../img/Irri.jpeg"
-          alt="Irri"
-        />
-        <p class="parrafos-personajes">
-       Irri es una de las doncellas de Daenerys Targaryen. Originalmente era parte de un khalasar rival que fue derrotado por Khal Drogo. Fue tomada prisionera y entregada a Daenerys como regalo de bodas. Fue regalada para enseñarle a Daenerys cómo montar a caballo. Es asesinada en Qarth por Xaro Xhoran Daxos cuando éste quiere robarle los dragones a Khaleesi.
-        </p>
-      </div>
-      <div class="imagen-personaje-serie">
-        <img
-          class="imagen-personajes"
-          src="../img/Doreah.jpeg"
-          alt="Doreah"
-        />
-        <p class="parrafos-personajes">
-          Doreah fue una de las doncellas de Daenerys Targaryen. Fue entregada a Daenerys como un regalo de bodas de parte del magíster Illyrio Mopatis a través de Viserys Targaryen. Es encerrada en el túmulo valirio por traición a su reina.-
-        </p>
-      </div>
+          <img
+            class="imagen-personajes"
+            src="../img/Aerys-II-Targaryen.jpg"
+            alt="Aerys Targaryen"
+          />
+          <p class="parrafos-personajes">
+            Aerys Targaryen: Último Rey Targaryen que gobernó sobre Poniente.
+            Aerys II perdió su nombre para ser conocido por toda la población
+            como El Rey Loco. Es asesinado por Jaime Lannister quien lo apuñala
+            por la espalda.
+          </p>
+        </div>
+        <div class="imagen-personaje-serie">
+          <img
+            class="imagen-personajes"
+            src="../img/Rhaegar Targaryen .jpg"
+            alt="Rhaegar Targaryen "
+          />
+          <p class="parrafos-personajes">
+            Rhaegar Targaryen: Hijo y heredero de Aerys II Targaryen. Se
+            divorció de Elia Martell, para casarse en secreto con Lyanna Stark.
+            Rhaegar muere combatiendo en la batalla del Tridente a manos de
+            Robert Baratheon
+          </p>
+        </div>
+        <div class="imagen-personaje-serie">
+          <img
+            class="imagen-personajes"
+            src="../img/Viserys Targaryen.jpg"
+            alt="Viserys Targaryen"
+          />
+          <p class="parrafos-personajes">
+            Viserys Targaryen: Fue el segundo hijo del rey Aerys II Targaryen.
+            Arregló el matrimonio de su hermana Daenerys con Khal Drogo.
+            Obsesionado toda su vida con recuperar el Trono de Hierro, lo que le
+            ha llevado a deambular por todas las Ciudades Libres hasta quedarse
+            sin dinero, por lo que es apodado como «El Rey Mendigo». Amenaza a
+            Daenerys con matar al hijo que lleva en el vientre si Drogo no le da
+            la corona que le prometio. Drogo exclama que le otorgará esa corona;
+            en ese momento, sus jinetes de sangre inmovilizan a Viserys,
+            mientras Drogo vuelca un caldero de oro fundido sobre su cabeza,
+            matándolo
+          </p>
+        </div>
+        <div class="imagen-personaje-serie">
+          <img
+            class="imagen-personajes"
+            src="../img/Daenerys Targaryen.jpg"
+            alt="Daenerys Targaryen"
+          />
+          <p class="parrafos-personajes">
+            Daenerys Targaryen: Se convierte en la heredera de la dinastía
+            Targaryen tras el asesinato de su hermano y planea reclamar ella
+            misma el Trono de Hierro, considerándolo su derecho de nacimiento.
+            Daenerys, embarazada, pierde a su marido Khal Drogo y a su hijo,
+            pero la magia de la sangre le permite incubar tres de sus huevos de
+            dragón, Viserion, Rhaegal y Drogon. Se convierte en Daenerys de la
+            Tormenta, la Primera de su nombre, Reina de Meereen, Reina de los
+            ándalos, los rhoynar y los primeros hombres, Señora de los Siete
+            Reinos, Protectora del Reino, Khaleesi del Gran Mar de Hierba, La
+            que No Arde, Madre de Dragones. Daenerys Targaryen muere asesinada a
+            manos de Jon Snow en la sala del trono, tras ejecutar un verdadero
+            genocidio en Desembarco del Rey y llegar al Trono de Hierro.
+          </p>
+        </div>
+        <div class="imagen-personaje-serie">
+          <img
+            class="imagen-personajes"
+            src="../img/Khal Drogo.jpg"
+            alt="Khal Drogo"
+          />
+          <p class="parrafos-personajes">
+            Khal Drogo: Hijo de Khal Bharbo, lo que lo convirtió en el khalakka
+            (heredero en el idioma dothraki ficticio de la saga) de su padre y
+            de su khalasar (su tribu). Es un Khal temido y respetado. Drogo
+            quedá mal herido después de un enfrentamiento con Khal Ogo. Pero
+            pese a los cuidados de la mujer, Drogo siguió empeorando y pronto
+            cayó de su caballo, símbolo para los Dothraki de que ya no podía
+            seguir liderándolos, Daenerys le pidió a la maegi que sanara a su
+            esposo a cambio de la vida de su hijo nonato. Tras un ritual con
+            magia de sangre, Daenerys descubre que ha perdido al niño que
+            esperaba y a Drogo en estado catatónico. Incapaz de devolver a la
+            normalidad a su marido, y de verlo en ese estado, Daenerys asesina a
+            Drogo asfixiándolo con una almohada.
+          </p>
+        </div>
+        <div class="imagen-personaje-serie">
+          <img
+            class="imagen-personajes"
+            src="../img/Dragon Viserion.jpg"
+            alt="Viserion"
+          />
+          <p class="parrafos-personajes">
+            Viserion: Es el más cariñoso y mimado de los tres dragones, también
+            el más confiado. Sus escamas son de color crema, duras y fuertes.
+            Sus cuernos, huesos de las alas y columna vertebral son de color
+            dorado, al igual que sus ojos. Su llama es de color oro pálido
+            plagado de rojo y naranja. Se dice además que su rugido puede enviar
+            a un centenar de leones corriendo. Sus dientes son de color negro
+            brillante. Viserion es asesinado con una lanza de hielo por el Rey
+            de la Noche, hundiéndose en las frías aguas del lago congelado. Poco
+            después el Rey de la Noche lo revive como espectro y lo convierte en
+            su montura para derretir el Muro y avanzar hacia el sur.
+          </p>
+        </div>
+        <div class="imagen-personaje-serie">
+          <img
+            class="imagen-personajes"
+            src="../img/Dragon Rhaegal.jpg"
+            alt="Rhaegal"
+          />
+          <p class="parrafos-personajes">
+            Rhaegal: Es el más pequeño y perezoso de los tres dragones, pues
+            siempre está enroscado y durmiendo plácidamente. Sus escamas son de
+            color verde y bronce, al igual que sus ojos. Su llama es de un fuego
+            amarillo-naranja atravesado por vetas de color verde. Sus dientes y
+            garras son negros. Mal herido, por la llamada "Danza de Dragones"
+            donde muere su hermano ahora caminante blanco Viserion, llega
+            volando a Rocadragón donde es embestido por tres lanzas gigantes
+            propulsadas por Euron Greyjoy quien los esperaba con su flota desde
+            un punto de la isla. Después de esos tres impactos, Rhaegal cae
+            muerto al mar, ante la mirada atónita de su madre.
+          </p>
+        </div>
+        <div class="imagen-personaje-serie">
+          <img
+            class="imagen-personajes"
+            src="../img/Dragon Drogo.jpg"
+            alt="Drogon"
+          />
+          <p class="parrafos-personajes">
+            Drogon: Es el más grande y agresivo de los tres dragones. Sus
+            escamas son negras, duras y fuertes. Sus cuernos y columna vertebral
+            son del color de la sangre y sus ojos son de un rojo ardiente. Su
+            llama es de color negro con vetas rojas. Se dice además que el calor
+            de su fuego puede sentirse a treinta metros de distancia. Su aleteo
+            suena como una tormenta y su sangre es negra y espesa. Drogon llega
+            al salón del trono de hierro, donde se encuentra con su madre
+            Daenerys, luego de que Jon Snow le clavara una espada en su corazón.
+            Drogon al darse cuenta de que su madre esta muerta, devastado,
+            derrite con sus llamas el Trono de Hierro; para después llevarse su
+            cadáver entre sus garras.
+          </p>
+        </div>
+        <div class="imagen-personaje-serie">
+          <img
+            class="imagen-personajes"
+            src="../img/Gusano Gris.jpg"
+            alt="Gusano Gris"
+          />
+          <p class="parrafos-personajes">
+            Gusano Gris: Inmaculado comprado y liberado por Daenerys Targaryen
+            en Astapor. Luego de su liberación fue elegido como comandante de
+            los Inmaculados al servicio de Daenerys y se convirtió en uno de los
+            consejeros de confianza de la reina.
+          </p>
+        </div>
+        <div class="imagen-personaje-serie">
+          <img
+            class="imagen-personajes"
+            src="../img/Missandei.jpg"
+            alt="Missandei"
+          />
+          <p class="parrafos-personajes">
+            Missandei: Antigua esclava que se convierte en doncella, traductora
+            y compañera leal de Daenerys Targaryen. Es originaria de Naath.
+            Muere decapitada a manos de la Montaña por orden de Cersei Lannister
+          </p>
+        </div>
+        <div class="imagen-personaje-serie">
+          <img class="imagen-personajes" src="../img/Irri.jpeg" alt="Irri" />
+          <p class="parrafos-personajes">
+            Irri es una de las doncellas de Daenerys Targaryen. Originalmente
+            era parte de un khalasar rival que fue derrotado por Khal Drogo. Fue
+            tomada prisionera y entregada a Daenerys como regalo de bodas. Fue
+            regalada para enseñarle a Daenerys cómo montar a caballo. Es
+            asesinada en Qarth por Xaro Xhoran Daxos cuando éste quiere robarle
+            los dragones a Khaleesi.
+          </p>
+        </div>
+        <div class="imagen-personaje-serie">
+          <img
+            class="imagen-personajes"
+            src="../img/Doreah.jpeg"
+            alt="Doreah"
+          />
+          <p class="parrafos-personajes">
+            Doreah fue una de las doncellas de Daenerys Targaryen. Fue entregada
+            a Daenerys como un regalo de bodas de parte del magíster Illyrio
+            Mopatis a través de Viserys Targaryen. Es encerrada en el túmulo
+            valirio por traición a su reina.-
+          </p>
+        </div>
       </section>
     </main>
 
     <!--Footer-->
     <footer>
       <div class="iconos-footer">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-brand-whatsapp"
+          width="44"
+          height="44"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#FFFFFF"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
-          <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1"  />
+          <path
+            d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1"
+          />
         </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-brand-instagram"
+          width="44"
+          height="44"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#FFFFFF"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <rect x="4" y="4" width="16" height="16" rx="4" />
           <circle cx="12" cy="12" r="3" />
           <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
         </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-mail"
+          width="44"
+          height="44"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#FFFFFF"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <rect x="3" y="5" width="18" height="14" rx="2" />
           <polyline points="3 7 12 13 21 7" />
         </svg>
         <p>2023 - Diseño y Desarrollo: Jennifer Kischner 💻</p>
       </div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

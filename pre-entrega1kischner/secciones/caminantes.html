@@ -9,32 +9,61 @@
       href="../img/Logo Caminantes.jpg"
       type="image/x-icon"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="../style/style.css" />
     <title>Caminantes Blancos</title>
   </head>
   <body>
+    <!--Encabezado-->
+
     <header>
-      <!--Logo-->
-      <img class="logo" src="../img/Logo Principal.jpg" alt="logo" />
       <!--Menú de Navegación-->
-      <nav>
-        <ul>
-          <li>
-            <a href="../index.html">INICIO</a>
-          </li>
-          <li>
-            <a href="casas.html">CASAS</a>
-          </li>
-          <li>
-            <a href="precuela.html">PRECUELA</a>
-          </li>
-          <li>
-            <a href="merchandising.html">MERCHANDISING</a>
-          </li>
-          <li>
-            <a href="contacto.html">CONTACTO</a>
-          </li>
-        </ul>
+
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <img class="logo" src="../img/Logo Principal.jpg" alt="logo" />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="casas.html"
+                  >CASAS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="precuela.html"
+                  >PRECUELA</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="merchandising.html">MERCHANDISING</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
 
@@ -66,91 +95,92 @@
           </p>
         </article>
 
+        <img
+          class="imagen-personajes"
+          src="../img/Niños del bosque.jpg"
+          alt="Niños del Bosque"
+        />
+        <p class="parrafos-casas">
+          Los Hijos del Bosque son los habitantes originarios de Poniente,
+          quienes vivían en el continente mucho antes de la llegada de los
+          Primeros Hombres durante la Era del Amanecer.
+        </p>
 
-          <img
-            class="imagen-personajes"
-            src="../img/Niños del bosque.jpg"
-            alt="Niños del Bosque"
-          />
-          <p class="parrafos-casas">
-            Los Hijos del Bosque son los habitantes originarios de Poniente,
-            quienes vivían en el continente mucho antes de la llegada de los
-            Primeros Hombres durante la Era del Amanecer.
-          </p>
+        <p class="parrafos-casas">
+          Fueron creados por los Hijos del Bosque hace miles de años cuando
+          vieron que los humanos eran una amenaza para su existencia. Les
+          cortaban sus árboles sagrados y les asesinaban. Es por esto que estas
+          criaturas decidieron convertir algunos Primeros Hombres en armas
+          contra ellos mismos. Insertaron una daga de vidriagón en un humano y
+          este se convirtió en el primer Caminante Blanco. El problema es que el
+          experimento se les fue de las manos. Los querían únicamente como armas
+          bélicas y se les rebelaron. Es por esto que los humanos y los Hijos
+          del Bosque crearon el Muro para separar los Otros de los vivos.
+        </p>
 
-          <p class="parrafos-casas">
-            Fueron creados por los Hijos del Bosque hace miles de años cuando vieron que los humanos eran una amenaza para su existencia. Les cortaban sus árboles sagrados y les asesinaban. Es por esto que estas criaturas decidieron convertir algunos Primeros Hombres en armas contra ellos mismos. Insertaron una daga de
-            vidriagón en un humano y este se convirtió en el primer Caminante
-            Blanco.   El problema es que el experimento se les fue de las manos. Los
-            querían únicamente como armas bélicas y se les rebelaron. Es por
-            esto que los humanos y los Hijos del Bosque crearon el Muro para
-            separar los Otros de los vivos.
-          </p>
-        
-          <img
-            class="imagen-personajes"
-            src="../img/Transformacion.jpg"
-            alt="Transformacion"
-          />
+        <img
+          class="imagen-personajes"
+          src="../img/Transformacion.jpg"
+          alt="Transformacion"
+        />
 
-          <img
-            class="imagen-personajes"
-            src="../img/Rey de la Noche.jpeg"
-            alt="Rey de la Noche"
-          />
+        <img
+          class="imagen-personajes"
+          src="../img/Rey de la Noche.jpeg"
+          alt="Rey de la Noche"
+        />
 
-          <p class="parrafos-casas">
-            Es un ser milenario que posee una gran cantidad de habilidades
-            mágicas que lo vuelven un enemigo sumamente peligroso. Tiene fuerza
-            y agilidad sobrehumana, es invulnerable al fuego y al acero. Puede
-            levantar a los muertos y controlarlos como esbirros, además de que
-            puede convertir a otros humanos en caminantes blancos para que
-            sirvan como sus lugartenientes.
-          </p>
+        <p class="parrafos-casas">
+          Es un ser milenario que posee una gran cantidad de habilidades mágicas
+          que lo vuelven un enemigo sumamente peligroso. Tiene fuerza y agilidad
+          sobrehumana, es invulnerable al fuego y al acero. Puede levantar a los
+          muertos y controlarlos como esbirros, además de que puede convertir a
+          otros humanos en caminantes blancos para que sirvan como sus
+          lugartenientes.
+        </p>
 
-          <img
-            class="imagen-personajes"
-            src="../img/Rey de la Noche II.jpg"
-            alt="Rey de la Noche"
-          />
+        <img
+          class="imagen-personajes"
+          src="../img/Rey de la Noche II.jpg"
+          alt="Rey de la Noche"
+        />
 
-          <p class="parrafos-casas">
-            Tiene también la habilidad de controlar y cambiar abruptamente el
-            clima del lugar donde se encuentra, generando terribles tormentas de
-            nieve; además con sólo tocar el suelo puede crear pequeños temblores
-            a voluntad. El Rey de la Noche también usa espadas, lanzas y otras
-            armas mágicas, aparentemente automanufacturadas. Pero, sin duda, sus
-            habilidades más místicas son sus poderes psíquicos similares a los
-            del Cuervo de los Tres Ojos, su enemigo natural.
-          </p>
+        <p class="parrafos-casas">
+          Tiene también la habilidad de controlar y cambiar abruptamente el
+          clima del lugar donde se encuentra, generando terribles tormentas de
+          nieve; además con sólo tocar el suelo puede crear pequeños temblores a
+          voluntad. El Rey de la Noche también usa espadas, lanzas y otras armas
+          mágicas, aparentemente automanufacturadas. Pero, sin duda, sus
+          habilidades más místicas son sus poderes psíquicos similares a los del
+          Cuervo de los Tres Ojos, su enemigo natural.
+        </p>
 
-          <img
-            class="imagen-personajes"
-            src="../img/Caminante.jpg"
-            alt="Caminante"
-          />
-          <p class="parrafos-casas">
-            Se caracterizan por tener los ojos azules, pelo blanco y por poder
-            montar a caballo y portar armas y, aunque son menos que los
-            Espectros, son más poderosos.
-          </p>
+        <img
+          class="imagen-personajes"
+          src="../img/Caminante.jpg"
+          alt="Caminante"
+        />
+        <p class="parrafos-casas">
+          Se caracterizan por tener los ojos azules, pelo blanco y por poder
+          montar a caballo y portar armas y, aunque son menos que los Espectros,
+          son más poderosos.
+        </p>
 
-          <img
-            class="imagen-personajes"
-            src="../img/Espectro.jpg"
-            alt="Espectro"
-          />
+        <img
+          class="imagen-personajes"
+          src="../img/Espectro.jpg"
+          alt="Espectro"
+        />
 
-          <p class="parrafos-casas">
-            La "segunda categoría" de este ejército y los más numerosos. Cada
-            Caminante Blanco tiene la habilidad de otorgar "vida" a los
-            cadáveres de humanos y que pasen a formar parte de su bando como
-            Espectros bajo sus órdenes. Son bastante más torpes que los
-            anteriores, pero inmunes al dolor, por lo que no se detienen ante
-            los ataques. Se sabe que, si muere un Caminante Blanco, también lo
-            hacen todos los espectros que creó
-          </p>
-
+        <p class="parrafos-casas">
+          La "segunda categoría" de este ejército y los más numerosos. Cada
+          Caminante Blanco tiene la habilidad de otorgar "vida" a los cadáveres
+          de humanos y que pasen a formar parte de su bando como Espectros bajo
+          sus órdenes. Son bastante más torpes que los anteriores, pero inmunes
+          al dolor, por lo que no se detienen ante los ataques. Se sabe que, si
+          muere un Caminante Blanco, también lo hacen todos los espectros que
+          creó
+        </p>
       </section>
     </main>
 
@@ -158,25 +188,25 @@
       <section class="section-casas">
         <!--Descripción y video demostrativo de la muerte-->
         <div>
-        <h2>Muerte del Rey de la Noche</h2>
-        <p class="parrafos-casas">
-          El Rey de la Noche intenta asesinar a Arya pero ella lo mata con su
-          daga de acero de valyrio. El Rey de la Noche muere y los Caminantes
-          Blancos y espectros caen.
-        </p>
-        <aside>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/zweGdwPbbMg?start=120"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          >
-        </iframe>
-        </aside>
-      </div>
+          <h2>Muerte del Rey de la Noche</h2>
+          <p class="parrafos-casas">
+            El Rey de la Noche intenta asesinar a Arya pero ella lo mata con su
+            daga de acero de valyrio. El Rey de la Noche muere y los Caminantes
+            Blancos y espectros caen.
+          </p>
+          <aside>
+            <iframe
+              width="560"
+              height="315"
+              src="https://www.youtube.com/embed/zweGdwPbbMg?start=120"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            >
+            </iframe>
+          </aside>
+        </div>
       </section>
     </main>
 
@@ -237,5 +267,15 @@
         <p>2023 - Diseño y Desarrollo: Jennifer Kischner 💻</p>
       </div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

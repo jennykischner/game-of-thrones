@@ -49,12 +49,6 @@ header {
   flex-grow: 0;
 }
 
-.dropdown-menu {
-  background-color: #b88a44;
-  border: 2px solid #d9c485;
-  font-family: "Noto Serif TC", serif;
-  font-size: 20px;
-}
 
 /*Titulo Principal portada*/
 
@@ -276,7 +270,7 @@ iframe {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  gap: 50px;
+  gap: 100px;
   margin: 15px 20px;
   width: auto;
 }
@@ -384,18 +378,19 @@ iframe {
 .input-contacto {
   width: 300px;
   height: 30px;
-  border: 2px solid #4d2818;
+  border: 2px solid #b88a44;
 }
 
 label {
   font-family: "Noto Serif TC", serif;
   margin: 0px 5px;
+  color: #b88a44;
 }
 
 textarea {
   width: 300px;
   height: 315px;
-  border: 2px solid #4d2818;
+  border: 2px solid #b88a44;
 }
 .form-contacto--boton{
   display: flex;

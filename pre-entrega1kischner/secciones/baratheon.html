@@ -9,35 +9,63 @@
       href="../img/Logo Baratheon.jpg"
       type="image/x-icon"
     />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="../style/style.css" />
     <title>Casa Baratheon</title>
   </head>
   <body>
+    <!--Encabezado-->
+
     <header>
-      <!--Logo-->
-      <img class="logo" src="../img/Logo Principal.jpg" alt="logo" />
       <!--Menú de Navegación-->
-      <nav>
-        <ul>
-          <li>
-            <a href="../index.html">INICIO</a>
-          </li>
-          <li>
-            <a href="casas.html">CASAS</a>
-          </li>
-          <li>
-            <a href="precuela.html">PRECUELA</a>
-          </li>
-          <li>
-            <a href="merchandising.html">MERCHANDISING</a>
-          </li>
-          <li>
-            <a href="contacto.html">CONTACTO</a>
-          </li>
-        </ul>
+
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <img class="logo" src="../img/Logo Principal.jpg" alt="logo" />
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html">INICIO</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="casas.html"
+                  >CASAS</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="precuela.html"
+                  >PRECUELA</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="merchandising.html">MERCHANDISING</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contacto.html">CONTACTO</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </nav>
     </header>
-
     <main>
       <section class="section-casas">
         <!--Texto Principal e información-->
@@ -74,151 +102,198 @@
       <section class="contenedor-imagenes-personajes">
         <!--Imagenes y datos del personaje-->
         <div class="imagen-personaje-serie">
-        <img
-          class="imagen-personajes"
-          src="../img/Robert Baratheon.jpg"
-          alt="Robert Baratheon"
-        />
-        <p class="parrafos-personajes">
-          Robert Baratheon: Es el Rey de los Siete Reinos desde la victoria en
-          la Guerra del Usurpador, también conocida como Rebelión de Robert,
-          después de la cual contrae matrimonio con Cersei para unir los reinos
-          con la casa Lannister. Muere atacado por un jabalí estando borracho y
-          dejando la corona en su psicópata hijo Joffrey
-        </p>
-      </div>
-      <div class="imagen-personaje-serie">
-        <img
-          class="imagen-personajes"
-          src="../img/Stannis Baratheon.jpg"
-          alt="Stannis Baratheon"
-        />
-        <p class="parrafos-personajes">
-          Stannis Baratheon: Tras la muerte de su hermano, Robert, Stannis se
-          proclama como Rey de los Siete Reinos y declara como traidores a todos
-          aquellos que no lo hagan. Stannis muere ejecutado por Brienne de Tarth
-        </p>
-      </div>
-      <div class="imagen-personaje-serie">
-        <img
-          class="imagen-personajes"
-          src="../img/Renly Baratheon.jpg"
-          alt="Renly Baratheon"
-        />
-        <p class="parrafos-personajes">
-          Renly Baratheon: Señor de Bastión de Tormentas y Consejero de Edictos
-          de su hermano mayor el rey Robert Baratheon. Mantiene una relación
-          clandestina con Loras Tyrell. En la víspera de la batalla contra
-          Stannis, Renly es asesinado por una sombra conjurada por la
-          sacerdotisa roja de su hermano, Melisandre, en su tienda a las afueras
-          de Bastión de Tormentas, estando presentes únicamente Catelyn Tully y
-          Brienne Tarth.
-        </p>
-      </div>
-      <div class="imagen-personaje-serie">
-        <img
-          class="imagen-personajes"
-          src="../img/Selyse Florent.jpg"
-          alt="Selyse Florent"
-        />
-        <p class="parrafos-personajes">
-          Selyse Florent: Esposa de Stannis Baratheon y autoproclamada Reina de
-          los Siete Reinos. Se suicida ahorcándose después de contemplar como su
-          hija Shireen era quemada en la hoguera por orden de Stannis
-        </p>
-      </div>
-      <div class="imagen-personaje-serie">
-        <img
-          class="imagen-personajes"
-          src="../img/Shireen Baratheon.jpg"
-          alt="Shireen Baratheon"
-        />
-        <p class="parrafos-personajes">
-          Shireen Baratheon: Es la única hija del rey Stannis Baratheon y Selyse
-          Florent. Padece una enfermedad que en la obra es calificada como
-          psoriagrís, la cual hace que la piel adquiera un aspecto escamoso y
-          pétreo. Es quemada en la hoguera a manos de Melisandre con el
-          consentimiento de su padre Stannis, debido a que Melisandre afirmó que
-          era un sacrificio necesario si quería vencer en la guerra.
-        </p>
-      </div>
-      <div class="imagen-personaje-serie">
-        <img
-          class="imagen-personajes"
-          src="../img/Melisandre.jpg"
-          alt="Melisandre "
-        />
-        <p class="parrafos-personajes">
-          Melisandre: Conocida como la Mujer Roja, Sacerdotisa del Señor de la
-          Luz, consejera de Stannis Baratheon en su lucha por el trono. Luego de
-          que Arya apuñaló y destruyó al "Rey de la Noche" para terminar la
-          guerra, Melisandre se sacó el collar que mantenía su juventud y caminó
-          por la nieve como una anciana hasta que se desvanece y muere.
-        </p>
-      </div>
-      <div class="imagen-personaje-serie">
-        <img
-          class="imagen-personajes"
-          src="../img/Davos Seaworth.jpg"
-          alt="Davos Seaworth"
-        />
-        <p class="parrafos-personajes">
-          Davos Seaworth: Contrabandista, pero se convirtió en caballero
-          hacendado y en el consejero más leal de Stannis Baratheon. Siempre se
-          mostró contra Melisandre, la sacerdotisa en la que Stannis y su esposa
-          confiaban ciegamente. Luego de la masacre en Desembarco del Rey es
-          nombrado Maestro de Barcos por el nuevo Rey
-        </p>
-      </div>
-      <div class="imagen-personaje-serie">
-        <img
-          class="imagen-personajes"
-          src="../img/Brienne de Tarth.jpg"
-          alt="Brienne de Tarth"
-        />
-        <p class="parrafos-personajes">
-          Brienne de Tarth: Se destaca por tener unos rasgos anormalmente
-          masculinos: muy alta, musculosa, pecho plano y ancho, pelo pajizo. Es
-          una espadachina excelente, reconociendo esto caballeros como Jaime
-          Lannister o Renly Baratheon, que supieron ver su destreza más allá de
-          su poco agraciado aspecto femenino. Brienne asiste a Renly en todo
-          momento y se convierte en su guardaespaldas más próximo.
-        </p>
-      </div>
-      <div class="imagen-personaje-serie">
-        <img
-          class="imagen-personajes"
-          src="../img/Barra.jpeg"
-          alt="Barra"
-        />
-        <p class="parrafos-personajes">
-          Barra fue una hija bastarda que tuvo el rey Robert con una prostituta de un burdel de Desembarco del Rey. La reina Cersei elimina a todos los hijos bastardos de Robert para evitar que supongan un peligro al reinado de su hijo, de modo que Barra es asesinada por un Capa Dorada enviado por Janos Slynt.
-        </p>
-      </div>
+          <img
+            class="imagen-personajes"
+            src="../img/Robert Baratheon.jpg"
+            alt="Robert Baratheon"
+          />
+          <p class="parrafos-personajes">
+            Robert Baratheon: Es el Rey de los Siete Reinos desde la victoria en
+            la Guerra del Usurpador, también conocida como Rebelión de Robert,
+            después de la cual contrae matrimonio con Cersei para unir los
+            reinos con la casa Lannister. Muere atacado por un jabalí estando
+            borracho y dejando la corona en su psicópata hijo Joffrey
+          </p>
+        </div>
+        <div class="imagen-personaje-serie">
+          <img
+            class="imagen-personajes"
+            src="../img/Stannis Baratheon.jpg"
+            alt="Stannis Baratheon"
+          />
+          <p class="parrafos-personajes">
+            Stannis Baratheon: Tras la muerte de su hermano, Robert, Stannis se
+            proclama como Rey de los Siete Reinos y declara como traidores a
+            todos aquellos que no lo hagan. Stannis muere ejecutado por Brienne
+            de Tarth
+          </p>
+        </div>
+        <div class="imagen-personaje-serie">
+          <img
+            class="imagen-personajes"
+            src="../img/Renly Baratheon.jpg"
+            alt="Renly Baratheon"
+          />
+          <p class="parrafos-personajes">
+            Renly Baratheon: Señor de Bastión de Tormentas y Consejero de
+            Edictos de su hermano mayor el rey Robert Baratheon. Mantiene una
+            relación clandestina con Loras Tyrell. En la víspera de la batalla
+            contra Stannis, Renly es asesinado por una sombra conjurada por la
+            sacerdotisa roja de su hermano, Melisandre, en su tienda a las
+            afueras de Bastión de Tormentas, estando presentes únicamente
+            Catelyn Tully y Brienne Tarth.
+          </p>
+        </div>
+        <div class="imagen-personaje-serie">
+          <img
+            class="imagen-personajes"
+            src="../img/Selyse Florent.jpg"
+            alt="Selyse Florent"
+          />
+          <p class="parrafos-personajes">
+            Selyse Florent: Esposa de Stannis Baratheon y autoproclamada Reina
+            de los Siete Reinos. Se suicida ahorcándose después de contemplar
+            como su hija Shireen era quemada en la hoguera por orden de Stannis
+          </p>
+        </div>
+        <div class="imagen-personaje-serie">
+          <img
+            class="imagen-personajes"
+            src="../img/Shireen Baratheon.jpg"
+            alt="Shireen Baratheon"
+          />
+          <p class="parrafos-personajes">
+            Shireen Baratheon: Es la única hija del rey Stannis Baratheon y
+            Selyse Florent. Padece una enfermedad que en la obra es calificada
+            como psoriagrís, la cual hace que la piel adquiera un aspecto
+            escamoso y pétreo. Es quemada en la hoguera a manos de Melisandre
+            con el consentimiento de su padre Stannis, debido a que Melisandre
+            afirmó que era un sacrificio necesario si quería vencer en la
+            guerra.
+          </p>
+        </div>
+        <div class="imagen-personaje-serie">
+          <img
+            class="imagen-personajes"
+            src="../img/Melisandre.jpg"
+            alt="Melisandre "
+          />
+          <p class="parrafos-personajes">
+            Melisandre: Conocida como la Mujer Roja, Sacerdotisa del Señor de la
+            Luz, consejera de Stannis Baratheon en su lucha por el trono. Luego
+            de que Arya apuñaló y destruyó al "Rey de la Noche" para terminar la
+            guerra, Melisandre se sacó el collar que mantenía su juventud y
+            caminó por la nieve como una anciana hasta que se desvanece y muere.
+          </p>
+        </div>
+        <div class="imagen-personaje-serie">
+          <img
+            class="imagen-personajes"
+            src="../img/Davos Seaworth.jpg"
+            alt="Davos Seaworth"
+          />
+          <p class="parrafos-personajes">
+            Davos Seaworth: Contrabandista, pero se convirtió en caballero
+            hacendado y en el consejero más leal de Stannis Baratheon. Siempre
+            se mostró contra Melisandre, la sacerdotisa en la que Stannis y su
+            esposa confiaban ciegamente. Luego de la masacre en Desembarco del
+            Rey es nombrado Maestro de Barcos por el nuevo Rey
+          </p>
+        </div>
+        <div class="imagen-personaje-serie">
+          <img
+            class="imagen-personajes"
+            src="../img/Brienne de Tarth.jpg"
+            alt="Brienne de Tarth"
+          />
+          <p class="parrafos-personajes">
+            Brienne de Tarth: Se destaca por tener unos rasgos anormalmente
+            masculinos: muy alta, musculosa, pecho plano y ancho, pelo pajizo.
+            Es una espadachina excelente, reconociendo esto caballeros como
+            Jaime Lannister o Renly Baratheon, que supieron ver su destreza más
+            allá de su poco agraciado aspecto femenino. Brienne asiste a Renly
+            en todo momento y se convierte en su guardaespaldas más próximo.
+          </p>
+        </div>
+        <div class="imagen-personaje-serie">
+          <img class="imagen-personajes" src="../img/Barra.jpeg" alt="Barra" />
+          <p class="parrafos-personajes">
+            Barra fue una hija bastarda que tuvo el rey Robert con una
+            prostituta de un burdel de Desembarco del Rey. La reina Cersei
+            elimina a todos los hijos bastardos de Robert para evitar que
+            supongan un peligro al reinado de su hijo, de modo que Barra es
+            asesinada por un Capa Dorada enviado por Janos Slynt.
+          </p>
+        </div>
       </section>
     </main>
 
     <!--Footer-->
     <footer>
       <div class="iconos-footer">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-whatsapp" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-brand-whatsapp"
+          width="44"
+          height="44"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#FFFFFF"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <path d="M3 21l1.65 -3.8a9 9 0 1 1 3.4 2.9l-5.05 .9" />
-          <path d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1"  />
+          <path
+            d="M9 10a0.5 .5 0 0 0 1 0v-1a0.5 .5 0 0 0 -1 0v1a5 5 0 0 0 5 5h1a0.5 .5 0 0 0 0 -1h-1a0.5 .5 0 0 0 0 1"
+          />
         </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-brand-instagram"
+          width="44"
+          height="44"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#FFFFFF"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <rect x="4" y="4" width="16" height="16" rx="4" />
           <circle cx="12" cy="12" r="3" />
           <line x1="16.5" y1="7.5" x2="16.5" y2="7.501" />
         </svg>
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-mail" width="44" height="44" viewBox="0 0 24 24" stroke-width="1.5" stroke="#FFFFFF" fill="none" stroke-linecap="round" stroke-linejoin="round">
-          <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          class="icon icon-tabler icon-tabler-mail"
+          width="44"
+          height="44"
+          viewBox="0 0 24 24"
+          stroke-width="1.5"
+          stroke="#FFFFFF"
+          fill="none"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path stroke="none" d="M0 0h24v24H0z" fill="none" />
           <rect x="3" y="5" width="18" height="14" rx="2" />
           <polyline points="3 7 12 13 21 7" />
         </svg>
         <p>2023 - Diseño y Desarrollo: Jennifer Kischner 💻</p>
       </div>
     </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
