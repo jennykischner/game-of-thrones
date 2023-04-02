@@ -43,8 +43,7 @@
         justify-content: center;
         align-items: center;
         .input-contacto{
-            width: 300px;
-            height: 30px;
+            @include tamaños (300px, 30px);
             border: 2px solid $colorPrincipal;
         }
         label{
@@ -53,8 +52,7 @@
             color: $colorPrincipal;
         }
         textarea{
-            width: 300px;
-            height: 315px;
+            @include tamaños (300px, 315px);
             border: 2px solid $colorPrincipal;
         }
         .form-contacto--boton{

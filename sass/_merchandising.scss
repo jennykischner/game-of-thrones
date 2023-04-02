@@ -8,8 +8,7 @@
         color: $colorPrincipal;
     }
     .imagen-carrito{
-        width: 35px;
-        height: 35px;
+        @include tamaños (35px, 35px);
     }
 }
 
@@ -30,17 +29,13 @@ main{
         width: auto;
     }
     .imagen-producto{
-        width: 200px;
-        height: 200px;
+        @include tamaños (200px, 200px);
         padding: 5px;
         justify-self: center;
     }
     .imagen-personajes-compra{
-        width: 200px;
-        height: 200px;
+        @include tamaños (200px, 200px);
         &:hover{
-            width: 200px;
-            height: 200px;
             border: 3px solid $colorPrincipal;
             transition: 2s;
             -webkit-transform: scale(1.3);

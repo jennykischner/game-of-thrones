@@ -8,12 +8,9 @@ main{
 
     }
     
-  
-    
     .section_principal {
         display: flex;
-        width: 600px;
-        height: 530px;
+        @include tamaños (600px, 530px);
         margin-left: 650px;
         padding-top: 20px;
 

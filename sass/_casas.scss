@@ -8,8 +8,7 @@ main{
             color: $colorPrincipal;
         }
         .imagen-fondo{
-            width: 650px;
-            height: 450px;
+            @include tamaños (650px, 450px);
             border: 3px solid $colorTerciario;
         }
         article{
@@ -36,8 +35,7 @@ main{
             align-items: center;
         }
         .imagen-casas{
-            width: 200px;
-            height: 200px;
+            @include tamaños (200px, 200px);
             padding: 5px;
             justify-self: center;
             &:hover{
@@ -47,8 +45,7 @@ main{
             }
         }
         .boton-casas{
-            width: 100px;
-            height: 30px;
+            @include tamaños (100px, 30px);
             margin: 0px 140px;
             background-color: black;
             color: $colorPrincipal;

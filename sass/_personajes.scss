@@ -1,10 +1,4 @@
 
-@mixin tamaños ($width, $heigth){
-    width: $width;
-    height: $heigth;
-}
-
-
 .contenedor-imagenes-personajes{
     display: grid;
     grid-template-columns: repeat(3, 1fr);

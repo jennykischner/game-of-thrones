@@ -1,3 +1,11 @@
 $colorPrincipal:#b88a44;
 $colorSecundario:#d9c485;
 $colorTerciario:#4d2818;
+
+
+/*Mixin de tamaños*/
+@mixin tamaños ($width, $heigth){
+    width: $width;
+    height: $heigth;
+}
+
