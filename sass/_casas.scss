@@ -1,0 +1,66 @@
+main{
+    .section-casas{
+        padding: 5px;
+        text-align: center;
+        h2,h3{
+            font-family: "Noto Serif TC", serif;
+             padding: 5px;
+            color: $colorPrincipal;
+        }
+        .imagen-fondo{
+            width: 650px;
+            height: 450px;
+            border: 3px solid $colorTerciario;
+        }
+        article{
+            .parrafos-casas{
+                font-family: "Poppins", sans-serif;
+                text-align: center;
+                padding: 15px;
+                color: $colorPrincipal;
+            }
+        }
+    }
+ 
+
+    .contenedor-imagenes-casas{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        gap: 20px;
+        margin: 15px 20px;
+        width: auto;
+        .imagen-casa-serie{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .imagen-casas{
+            width: 200px;
+            height: 200px;
+            padding: 5px;
+            justify-self: center;
+            &:hover{
+                width: 250px;
+                transition: 2s;
+                border: 2px outset $colorTerciario;
+            }
+        }
+        .boton-casas{
+            width: 100px;
+            height: 30px;
+            margin: 0px 140px;
+            background-color: black;
+            color: $colorPrincipal;
+            border: 2px solid $colorPrincipal;
+            font-family: "Roboto", sans-serif;
+            &:hover{
+                background-color: $colorPrincipal;
+                color: black;
+                font-family: "Roboto", sans-serif;
+                border: 2px solid black;
+            }
+        }
+    }
+   
+}

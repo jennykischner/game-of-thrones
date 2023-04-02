@@ -1,97 +1,35 @@
-/*Fuentes*/
 @import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/*Estilos Body*/
-body {
-  background-color: black;
-}
-
-/*Estilos Header*/
-
-header {
-  background-image: url(../img/Imagen-Header.jpg);
-  height: 150px;
-  width: 100%;
-  background-size: cover;
-}
-
-.logo {
-  width: 150px;
-  height: 140px;
-}
-
-.navbar-toggler {
-  background-color: white;
-}
-
-.navbar-toggler-icon{
-  background-color: white;
-}
-
-.nav-link {
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  color: white;
-}
-
-.nav-link:hover {
-  color: #b88a44;
-}
-
-.navbar-collapse {
-  justify-content: flex-end;
-  flex-grow: 0;
-}
-
-
-
-/*Titulo Principal portada*/
-
-h1 {
+main h1 {
   font-family: "Berkshire Swash", cursive;
   font-size: 55px;
   color: #d9c485;
   text-align: center;
   padding-top: 15px;
 }
-
-/*Estilos fotos libros portada*/
-
-.section_principal {
+main .section_principal {
   display: flex;
   width: 600px;
   height: 530px;
   margin-left: 650px;
   padding-top: 20px;
 }
-
-.section_principal img {
+main .section_principal img {
   width: 0px;
   flex-grow: 1;
   background-size: fill;
   opacity: 0.8;
   transition: 0.5s ease;
 }
-
-.section_principal img:hover {
+main .section_principal img:hover {
   cursor: crosshair;
   width: 320px;
   opacity: 1;
   filter: contrast(120%);
 }
-
-/*Estilo Párrafo Principal*/
-
-.parrafo-principal {
+main section article .parrafo-principal {
   display: flex;
   font-family: "Poppins", sans-serif;
   color: #b88a44;
@@ -99,30 +37,43 @@ h1 {
   align-items: center;
   padding: 20px 15px;
 }
-
-/*Estilos Emblemas Portada*/
-
-.imagenes-emblemas {
+main .imagenes-emblemas {
   display: flex;
   padding: 20px;
   justify-content: space-between;
 }
-
-.imagenes-emblemas img {
+main .imagenes-emblemas img {
   width: 230px;
   height: auto;
   padding: 10px;
 }
-
-.imagenes-emblemas img:hover {
+main .imagenes-emblemas img:hover {
   opacity: 0.8;
   filter: drop-shadow(2px 4px 6px black);
   border: 4px solid #b88a44;
 }
 
-/*Estilos Sección Casas*/
-
-.contenedor-imagenes-casas {
+main .section-casas {
+  padding: 5px;
+  text-align: center;
+}
+main .section-casas h2, main .section-casas h3 {
+  font-family: "Noto Serif TC", serif;
+  padding: 5px;
+  color: #b88a44;
+}
+main .section-casas .imagen-fondo {
+  width: 650px;
+  height: 450px;
+  border: 3px solid #4d2818;
+}
+main .section-casas article .parrafos-casas {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding: 15px;
+  color: #b88a44;
+}
+main .contenedor-imagenes-casas {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(4, 1fr);
@@ -130,27 +81,23 @@ h1 {
   margin: 15px 20px;
   width: auto;
 }
-
-.imagen-casas {
+main .contenedor-imagenes-casas .imagen-casa-serie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main .contenedor-imagenes-casas .imagen-casas {
   width: 200px;
   height: 200px;
   padding: 5px;
   justify-self: center;
 }
-
-.imagen-casa-serie {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.imagen-casas:hover {
+main .contenedor-imagenes-casas .imagen-casas:hover {
   width: 250px;
   transition: 2s;
   border: 2px outset #4d2818;
 }
-
-.boton-casas {
+main .contenedor-imagenes-casas .boton-casas {
   width: 100px;
   height: 30px;
   margin: 0px 140px;
@@ -159,44 +106,11 @@ h1 {
   border: 2px solid #b88a44;
   font-family: "Roboto", sans-serif;
 }
-
-.boton-casas:hover {
+main .contenedor-imagenes-casas .boton-casas:hover {
   background-color: #b88a44;
   color: black;
   font-family: "Roboto", sans-serif;
   border: 2px solid black;
-}
-
-/*Estilos Casas*/
-
-h2 {
-  font-family: "Noto Serif TC", serif;
-  padding: 5px;
-  color: #b88a44;
-}
-
-h3 {
-  font-family: "Noto Serif TC", serif;
-  padding: 5px;
-  color: #b88a44;
-}
-
-.section-casas {
-  padding: 5px;
-  text-align: center;
-}
-
-.imagen-fondo {
-  width: 650px;
-  height: 450px;
-  border: 3px solid #4d2818;
-}
-
-.parrafos-casas {
-  font-family: "Poppins", sans-serif;
-  text-align: center;
-  padding: 15px;
-  color: #b88a44;
 }
 
 .contenedor-imagenes-personajes {
@@ -207,21 +121,18 @@ h3 {
   margin: 15px 20px;
   width: auto;
 }
-
-.imagen-personaje-serie {
+.contenedor-imagenes-personajes .imagen-personaje-serie {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.imagen-personajes {
+.contenedor-imagenes-personajes .imagen-personajes {
   width: 300px;
   height: 300px;
   margin: 5px;
   border: 4px solid #4d2818;
 }
-
-.parrafos-personajes {
+.contenedor-imagenes-personajes .parrafos-personajes {
   font-family: "Poppins", sans-serif;
   text-align: center;
   font-size: 15px;
@@ -230,12 +141,17 @@ h3 {
   color: #b88a44;
 }
 
-/*Estilos Sección Precuela*/
-
-.video-principal {
-  display: flex;
-  justify-content: center;
-  padding: 25px;
+.imagenes-caminantes .imagen-personajes {
+  width: 300px;
+  height: 300px;
+  margin: 5px;
+  border: 4px solid #4d2818;
+}
+.imagenes-caminantes .parrafos-casas {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+  padding: 15px;
+  color: #b88a44;
 }
 
 iframe {
@@ -244,32 +160,40 @@ iframe {
   border: 4px solid #4d2818;
 }
 
-.parrafo-precuela {
+main section .video-principal {
+  display: flex;
+  justify-content: center;
+  padding: 25px;
+}
+main section .parrafo-precuela {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   padding: 30px 10px;
   color: #b88a44;
 }
 
-/*Estilos Sección Merchandisigin*/
-
 .carrito-compras {
   display: flex;
   justify-content: flex-end;
 }
-
-.titulo-compras {
+.carrito-compras .titulo-compras {
   font-family: "Noto Serif TC", serif;
   font-size: 15px;
   color: #b88a44;
 }
-
-.imagen-carrito {
+.carrito-compras .imagen-carrito {
   width: 35px;
   height: 35px;
 }
 
-.contenedor-imagen-compra {
+main .titulo-producto {
+  font-family: "Noto Serif TC", serif;
+  display: flex;
+  justify-content: center;
+  font-size: 50px;
+  color: #b88a44;
+}
+main .contenedor-imagen-compra {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   grid-template-rows: repeat(3, 1fr);
@@ -277,38 +201,25 @@ iframe {
   margin: 15px 20px;
   width: auto;
 }
-
-.imagen-producto {
+main .imagen-producto {
   width: 200px;
   height: 200px;
   padding: 5px;
   justify-self: center;
 }
-
-.titulo-producto {
-  font-family: "Noto Serif TC", serif;
-  display: flex;
-  justify-content: center;
-  font-size: 50px;
-  color: #b88a44;
-}
-
-.imagen-personajes-compra {
+main .imagen-personajes-compra {
   width: 200px;
   height: 200px;
 }
-
-.imagen-personajes-compra:hover {
+main .imagen-personajes-compra:hover {
   width: 200px;
   height: 200px;
   border: 3px solid #b88a44;
   transition: 2s;
-  -webkit-transform: scale(1.3);
   transform: scale(1.3);
   overflow: hidden;
 }
-
-.parrafo-compras {
+main .parrafo-compras {
   font-family: "Roboto", sans-serif;
   font-size: 15px;
   display: flex;
@@ -316,14 +227,12 @@ iframe {
   align-items: center;
   color: #b88a44;
 }
-
-.form-compras {
+main .form-compras {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-.boton-compras {
+main .boton-compras {
   width: 100px;
   font-family: "Roboto", sans-serif;
   background-color: #b88a44;
@@ -331,12 +240,9 @@ iframe {
   flex-direction: column;
   align-items: center;
 }
-
-.boton-compras:hover {
+main .boton-compras:hover {
   filter: drop-shadow(1px 1px 1px white);
 }
-
-/*Contacto*/
 
 .titulo-ventas {
   display: flex;
@@ -358,16 +264,18 @@ iframe {
 .contacto-mapa {
   display: flex;
 }
-
-.mapa {
+.contacto-mapa .mapa {
   padding: 15px;
   margin-left: 650px;
   width: 600px;
 }
 
-/*Formulario de Consultas*/
-
-.titulo-formulario {
+.formulario-ventas {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+.formulario-ventas .titulo-formulario {
   display: flex;
   padding: 15px;
   flex-direction: row;
@@ -376,44 +284,90 @@ iframe {
   font-family: "Roboto", sans-serif;
   color: #b88a44;
 }
-
-.formulario-ventas {
-  display: flex;
-  flex-direction: column;
-  padding: 10px;
-}
-
-.form-contacto {
+.formulario-ventas .form-contacto {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
-
-.input-contacto {
+.formulario-ventas .form-contacto .input-contacto {
   width: 300px;
   height: 30px;
   border: 2px solid #b88a44;
 }
-
-label {
+.formulario-ventas .form-contacto label {
   font-family: "Noto Serif TC", serif;
   margin: 0px 5px;
   color: #b88a44;
 }
-
-textarea {
+.formulario-ventas .form-contacto textarea {
   width: 300px;
   height: 315px;
   border: 2px solid #b88a44;
 }
-
-.form-contacto--boton {
+.formulario-ventas .form-contacto .form-contacto--boton {
   display: flex;
+}
+.formulario-ventas .form-contacto .form-contacto--boton .form-compras {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.formulario-ventas .form-contacto .form-contacto--boton .boton-compras {
+  width: 100px;
+  font-family: "Roboto", sans-serif;
+  background-color: #b88a44;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.formulario-ventas .form-contacto .form-contacto--boton .boton-compras:hover {
+  filter: drop-shadow(1px 1px 1px white);
+}
+
+/*Fuentes*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/*Estilos Body*/
+body {
+  background-color: black;
+}
+
+/*Estilos Header*/
+header {
+  background-image: url(../img/Imagen-Header.jpg);
+  height: 150px;
+  width: 100%;
+  background-size: cover;
+}
+header .logo {
+  width: 150px;
+  height: 140px;
+}
+header .navbar-toggler {
+  background-color: white;
+}
+header .navbar-toggler-icon {
+  background-color: white;
+}
+header .nav-link {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  color: white;
+}
+header .nav-link:hover {
+  color: #b88a44;
+}
+header .navbar-collapse {
+  justify-content: flex-end;
+  flex-grow: 0;
 }
 
 /*Footer*/
-
 footer {
   background-image: url(../img/Imagen-Footer.jpg);
   background-size: cover;
@@ -422,280 +376,223 @@ footer {
   padding: 20px;
   margin-top: 130px;
 }
-
-.iconos-footer {
+footer .iconos-footer {
   text-align: center;
   color: white;
 }
-
-.iconos-footer p {
+footer p {
   font-family: "Noto Serif TC", serif;
 }
 
-/*MEDIAS QUERIES*/
-
+/*Medias Queries*/
 @media only screen and (max-width: 1024px) {
   /*Index General*/
-  h1 {
+  header #navbarSupportedContent ul .nav-item {
+    display: flex;
+    justify-content: flex-end;
+  }
+  main h1 {
     font-size: 45px;
   }
-
-  .section_principal {
+  main .section_principal {
     margin: 20px;
     width: 75%;
     height: 250px;
   }
-
-  .parrafo-principal {
+  main section article .parrafo-principal {
     flex-direction: column;
   }
-
-  .imagenes-emblemas {
+  main .imagenes-emblemas {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-    justify-items:center;
+    justify-items: center;
   }
-
-  .nav-item {
-    display: flex;
-    justify-content: flex-end;
-  }
-
   /*Casas*/
-
-  .contenedor-imagenes-casas {
+  main .contenedor-imagenes-casas {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  h2,
-  h3 {
+  main h2,
+  main h3 {
     font-size: 20px;
   }
-
-  .imagen-fondo {
+  main .imagen-fondo {
     width: 100%;
   }
-
-  .contenedor-imagenes-personajes {
+  main .contenedor-imagenes-personajes {
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
   }
-
-
   /*Videos*/
-
   iframe {
     width: 100%;
   }
-
   /*Merchandising*/
-
   .carrito-compras {
     justify-content: flex-start;
   }
-
-  .titulo-producto {
+  main .titulo-producto {
     padding: 70px;
     font-size: 40px;
   }
-  .contenedor-imagen-compra {
+  main .contenedor-imagen-compra {
     grid-template-columns: repeat(2, 1fr);
     gap: 100px;
   }
-
   /*Contacto*/
-
   .parrafo-ventas {
     font-size: 20px;
     margin: 10px;
   }
-
   .contacto-mapa {
     justify-content: center;
   }
-
   .mapa {
     width: 55%;
     height: auto;
     margin: 0px;
   }
 }
-
-
-
-
 @media only screen and (max-width: 768px) {
   /*Index General*/
-  h1 {
+  header #navbarSupportedContent ul .nav-item {
+    display: flex;
+    justify-content: flex-end;
+  }
+  main h1 {
     font-size: 45px;
   }
-
-  .section_principal {
+  main .section_principal {
     margin: 20px;
     width: 75%;
     height: 250px;
   }
-
-  .parrafo-principal {
+  main section article .parrafo-principal {
     flex-direction: column;
   }
-
-  .imagenes-emblemas {
+  main .imagenes-emblemas {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10px;
-    justify-items:center;
+    justify-items: center;
   }
-
-  .nav-item {
+  main .nav-item {
     display: flex;
     justify-content: flex-end;
   }
-
   /*Casas*/
-
-  .contenedor-imagenes-casas {
+  main .contenedor-imagenes-casas {
     grid-template-columns: repeat(2, 1fr);
   }
-
-  h2,
-  h3 {
+  main h2,
+  main h3 {
     font-size: 20px;
   }
-
-  .imagen-fondo {
+  main .imagen-fondo {
     width: 100%;
   }
-
-  .contenedor-imagenes-personajes {
+  main .contenedor-imagenes-personajes {
     grid-template-columns: repeat(2, 1fr);
     gap: 5px;
   }
-
-
   /*Videos*/
-
   iframe {
     width: 100%;
   }
-
   /*Merchandising*/
-
   .carrito-compras {
     justify-content: flex-start;
   }
-
-  .titulo-producto {
+  main .titulo-producto {
     padding: 70px;
     font-size: 40px;
   }
-  .contenedor-imagen-compra {
+  main .contenedor-imagen-compra {
     grid-template-columns: repeat(2, 1fr);
-    gap: 100px;
+    gap: 80px;
   }
-
   /*Contacto*/
-
   .parrafo-ventas {
     font-size: 20px;
     margin: 10px;
   }
-
   .contacto-mapa {
     justify-content: center;
   }
-
   .mapa {
     width: 55%;
     height: auto;
     margin: 0px;
   }
 }
-
-
-
 @media only screen and (max-width: 576px) {
   /*Index General*/
-  h1 {
+  header #navbarSupportedContent ul .nav-item {
+    display: flex;
+    justify-content: flex-end;
+  }
+  main h1 {
     font-size: 40px;
   }
-
-  .section_principal {
+  main .section_principal {
     margin: 20px;
     width: 65%;
     height: 250px;
   }
-
-  .parrafo-principal {
+  main section article .parrafo-principal {
     flex-direction: column;
   }
-
-  .imagenes-emblemas {
+  main .imagenes-emblemas {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     justify-items: center;
   }
-
-  .nav-item {
+  main .nav-item {
     display: flex;
     justify-content: flex-end;
   }
-
   /*Casas*/
-
-  .contenedor-imagenes-casas {
+  main .contenedor-imagenes-casas {
     grid-template-columns: repeat(1, 1fr);
   }
-
-  h2,
-  h3 {
+  main h2,
+  main h3 {
     font-size: 20px;
   }
-
-  .imagen-fondo {
+  main .imagen-fondo {
     width: 100%;
   }
-
-  .contenedor-imagenes-personajes {
+  main .contenedor-imagenes-personajes {
     grid-template-columns: repeat(1, 1fr);
+    gap: 5px;
   }
-
   /*Videos*/
-
   iframe {
     width: 100%;
   }
-
   /*Merchandising*/
-
   .carrito-compras {
     justify-content: flex-start;
   }
-
-  .titulo-producto {
+  main .titulo-producto {
     padding: 70px;
     font-size: 40px;
   }
-  .contenedor-imagen-compra {
+  main .contenedor-imagen-compra {
     grid-template-columns: repeat(2, 1fr);
-    gap: 100px;
+    gap: 80px;
   }
-
   /*Contacto*/
-
   .parrafo-ventas {
     font-size: 20px;
     margin: 10px;
   }
-
   .contacto-mapa {
     justify-content: center;
   }
-
   .mapa {
-    width: 45%;
+    width: 55%;
     height: auto;
     margin: 0px;
   }
-}
+}/*# sourceMappingURL=style.css.map */
