@@ -412,11 +412,11 @@ footer p {
   main .contenedor-imagenes-casas {
     grid-template-columns: repeat(2, 1fr);
   }
-  main h2,
-  main h3 {
+  main .section-casas h2,
+  main .section-casas h3 {
     font-size: 20px;
   }
-  main .imagen-fondo {
+  main .section-casas .imagen-fondo {
     width: 100%;
   }
   main .contenedor-imagenes-personajes {
@@ -439,6 +439,10 @@ footer p {
     grid-template-columns: repeat(2, 1fr);
     gap: 100px;
   }
+  main .imagen-personajes-compra:hover {
+    width: 180px;
+    height: 180px;
+  }
   /*Contacto*/
   .parrafo-ventas {
     font-size: 20px;
@@ -447,7 +451,7 @@ footer p {
   .contacto-mapa {
     justify-content: center;
   }
-  .mapa {
+  .contacto-mapa .mapa {
     width: 55%;
     height: auto;
     margin: 0px;
@@ -484,11 +488,11 @@ footer p {
   main .contenedor-imagenes-casas {
     grid-template-columns: repeat(2, 1fr);
   }
-  main h2,
-  main h3 {
+  main .section-casas h2,
+  main .section-casas h3 {
     font-size: 20px;
   }
-  main .imagen-fondo {
+  main .section-casas .imagen-fondo {
     width: 100%;
   }
   main .contenedor-imagenes-personajes {
@@ -509,7 +513,11 @@ footer p {
   }
   main .contenedor-imagen-compra {
     grid-template-columns: repeat(2, 1fr);
-    gap: 80px;
+    gap: 100px;
+  }
+  main .imagen-personajes-compra:hover {
+    width: 180px;
+    height: 180px;
   }
   /*Contacto*/
   .parrafo-ventas {
@@ -519,7 +527,7 @@ footer p {
   .contacto-mapa {
     justify-content: center;
   }
-  .mapa {
+  .contacto-mapa .mapa {
     width: 55%;
     height: auto;
     margin: 0px;
@@ -555,11 +563,11 @@ footer p {
   main .contenedor-imagenes-casas {
     grid-template-columns: repeat(1, 1fr);
   }
-  main h2,
-  main h3 {
+  main .section-casas h2,
+  main .section-casas h3 {
     font-size: 20px;
   }
-  main .imagen-fondo {
+  main .section-casas .imagen-fondo {
     width: 100%;
   }
   main .contenedor-imagenes-personajes {
