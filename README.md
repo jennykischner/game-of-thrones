@@ -2,9 +2,9 @@
 
  ## ★ Proyecto: Game Of Thrones
  ####  Este proyecto forma parte del curso Desarrollo Web, dictado por Coderhouse.
- ####  ⌑ Profesor: Rodrigo Zungri
- ####  ⌑ Coordinadora: Vanina Federici
- ####  ⌑ Tutora: Micaela Isla
+ ####   - Profesor: Rodrigo Zungri
+ ####   - Coordinadora: Vanina Federici
+ ####   - Tutora: Micaela Isla
 
  Website
  
@@ -16,11 +16,11 @@
    - Tablet
 
  ⋆ Construido con:
-   - ✔ HTML
-   - ✔ CSS
-   - ✔ SASS
-   - ✔ GIT
-   - ✔ Deploy en NETLIFY
+   ✔ HTML
+   ✔ CSS
+   ✔ SASS
+   ✔ GIT
+   ✔ Deploy en NETLIFY
 
  ⋆ Recursos:
    - ✔  Fuente: https://fonts.google.com/
