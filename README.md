@@ -8,7 +8,7 @@
  #####   - Tutora: Micaela Isla
 
  Website:  
-[Mira aquí mi Editor](https://gameof-thrones.netlify.app/) 
+[Mira aquí mi página](https://gameof-thrones.netlify.app/) 
 
  ⋆ Diseño responsivo:
    - Smartphone
