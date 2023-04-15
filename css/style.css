@@ -307,24 +307,15 @@ main .boton-compras:hover {
   height: 315px;
   border: 2px solid #b88a44;
 }
-.formulario-ventas .form-contacto .form-contacto--boton {
-  display: flex;
-}
-.formulario-ventas .form-contacto .form-contacto--boton .form-compras {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.formulario-ventas .form-contacto .form-contacto--boton .boton-compras {
+
+.btn {
   width: 100px;
   font-family: "Roboto", sans-serif;
   background-color: #b88a44;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  margin: 2px;
 }
-.formulario-ventas .form-contacto .form-contacto--boton .boton-compras:hover {
-  filter: drop-shadow(1px 1px 1px white);
+.btn:hover {
+  background-color: #b88a44;
 }
 
 /*Fuentes*/

@@ -115,29 +115,44 @@
           placeholder="Ingrese su contacto"
         />
         <label for="email">Email</label>
-        <input
-          class="input-contacto"
-          type="email"
-          name=""
-          id="email"
-          placeholder="Ingrese su mail aquí"
-        />
+          <input
+            class="input-contacto"
+            type="email"
+            name=""
+            id="email"
+            placeholder="Ingrese su mail aquí"
+          />
         <label for="consulta">Consulta</label>
         <textarea name="" id="consulta" cols="30" rows="10"></textarea>
 
-        <div class="form-contacto--boton">
-          <form class="form-compras" action="" method="get">
-            <input class="boton-compras" type="submit" value="Enviar" />
-          </form>
+        <!-- Modal -->
+        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+          Enviar
+        </button>
 
-          <form class="form-compras" action="" method="get">
-            <input class="boton-compras" type="submit" value="Borrar" />
-          </form>
+
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+               <h1 class="modal-title fs-5" id="staticBackdropLabel">Mensaje Enviado</h1>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                Su mensaje será respondido a la brevedad
+              </div>
+              <div class="modal-footer">
+               <button type="button" class="btn" data-bs-dismiss="modal">Cerrar</button>
+            </div>
+          </div>
+      
         </div>
       </form>
     </div>
+      
+    </div>
 
-    <!--Footer-->
+   <!--Footer-->
     <footer>
       <div class="iconos-footer">
         <svg

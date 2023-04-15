@@ -55,25 +55,18 @@
             @include tamaños (300px, 315px);
             border: 2px solid $colorPrincipal;
         }
-        .form-contacto--boton{
-            display: flex;
-            .form-compras{
-                display: flex;
-                flex-direction: column;
-                align-items: center; 
-            }
-            .boton-compras{
-                width: 100px;
-                font-family: "Roboto", sans-serif;
-                background-color: $colorPrincipal;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                &:hover{
-                filter: drop-shadow(1px 1px 1px white);
-        }
-            }
-        }
+     
     }
     
 }
+
+.btn{
+    width: 100px;
+    font-family: "Roboto", sans-serif;
+    background-color: $colorPrincipal;
+    margin: 2px;
+    &:hover{
+        background-color: $colorPrincipal;
+    }
+}
+
