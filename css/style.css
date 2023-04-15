@@ -169,10 +169,38 @@ main section .video-principal {
   justify-content: center;
   padding: 25px;
 }
+main section .video-principal iframe {
+  width: 1000px;
+  height: 500px;
+  border: 4px solid #4d2818;
+}
 main section .parrafo-precuela {
   font-family: "Poppins", sans-serif;
   font-size: 20px;
-  padding: 30px 10px;
+  padding: 50px 10px;
+  color: #b88a44;
+}
+
+.section-precuela {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+}
+.section-precuela .card {
+  border: 4px solid #4d2818;
+}
+.section-precuela .card .card-img-top {
+  width: auto;
+  height: 250px;
+}
+.section-precuela .card .card-body {
+  background-color: black;
+}
+.section-precuela .card .card-title {
+  color: #d9c485;
+  display: flex;
+  justify-content: center;
+}
+.section-precuela .card .card-text {
   color: #b88a44;
 }
 
@@ -436,6 +464,12 @@ footer p {
     width: 180px;
     height: 180px;
   }
+  /*Precuela*/
+  .section-precuela {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
   /*Contacto*/
   .parrafo-ventas {
     font-size: 20px;
@@ -512,6 +546,12 @@ footer p {
     width: 180px;
     height: 180px;
   }
+  /*Precuela*/
+  .section-precuela {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
   /*Contacto*/
   .parrafo-ventas {
     font-size: 20px;
@@ -582,6 +622,12 @@ footer p {
   main .contenedor-imagen-compra {
     grid-template-columns: repeat(2, 1fr);
     gap: 80px;
+  }
+  /*Precuela */
+  .section-precuela {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    justify-items: center;
   }
   /*Contacto*/
   .parrafo-ventas {

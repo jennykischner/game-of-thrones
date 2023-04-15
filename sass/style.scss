@@ -182,6 +182,13 @@ footer{
         }
     }
 
+    /*Precuela*/
+
+    .section-precuela{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        justify-items: center;
+    }
   
     /*Contacto*/
   
@@ -307,7 +314,14 @@ footer{
         }
     }
 
+    /*Precuela*/
 
+    
+    .section-precuela{
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        justify-items: center;
+    }
   
     /*Contacto*/
   
@@ -425,6 +439,14 @@ footer{
         }
     }
    
+    /*Precuela */
+
+    .section-precuela{
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+        justify-items: center;
+    }
+  
    
     /*Contacto*/
    

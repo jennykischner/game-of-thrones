@@ -47,8 +47,7 @@ main{
         padding: 20px;
         justify-content: space-between;
         img{
-            width: 230px;
-             height: auto;
+            @include tamaños(230px, auto);
             padding: 10px;
             &:hover{
                 opacity: 0.8;
