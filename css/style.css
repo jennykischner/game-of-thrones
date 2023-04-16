@@ -1,9 +1,16 @@
 @charset "UTF-8";
+/*Importación Variables*/ /*Variables Colores*/
 /*Mixin de tamaños*/
 @import url("https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
+main {
+  /*Estilos Titulo Principal*/
+  /*Estilos Libros*/
+  /*Estilos Párrafo Principal*/
+  /*Estilos Emblemas*/
+}
 main h1 {
   font-family: "Berkshire Swash", cursive;
   font-size: 55px;
@@ -55,11 +62,16 @@ main .imagenes-emblemas img:hover {
   border: 4px solid #b88a44;
 }
 
+main {
+  /*Estilos de cada Casa*/
+  /*Estilos de casas.html*/
+}
 main .section-casas {
   padding: 5px;
   text-align: center;
 }
-main .section-casas h2, main .section-casas h3 {
+main .section-casas h2,
+main .section-casas h3 {
   font-family: "Noto Serif TC", serif;
   padding: 5px;
   color: #b88a44;
@@ -115,34 +127,34 @@ main .contenedor-imagenes-casas .boton-casas:hover {
   border: 2px solid black;
 }
 
-.contenedor-imagenes-personajes {
+/*Estilos Personajes*/
+.section-personajes {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 1fr);
-  gap: 20px;
-  margin: 15px 20px;
-  width: auto;
+  gap: 15px;
+  margin: 20px;
+  justify-items: center;
 }
-.contenedor-imagenes-personajes .imagen-personaje-serie {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.contenedor-imagenes-personajes .imagen-personajes {
-  width: 300px;
-  height: 300px;
-  margin: 5px;
+.section-personajes .card {
   border: 4px solid #4d2818;
 }
-.contenedor-imagenes-personajes .parrafos-personajes {
-  font-family: "Poppins", sans-serif;
-  text-align: center;
-  font-size: 15px;
-  margin: 5px;
-  width: 250px;
+.section-personajes .card .card-img-top {
+  width: auto;
+  height: 250px;
+}
+.section-personajes .card .card-body {
+  background-color: black;
+}
+.section-personajes .card .card-title {
+  color: #d9c485;
+  display: flex;
+  justify-content: center;
+}
+.section-personajes .card .card-text {
   color: #b88a44;
 }
 
+/*Estilos Caminantes*/
 .section-casas .imagenes-caminantes h2 {
   color: #d9c485;
 }
@@ -164,6 +176,10 @@ main .contenedor-imagenes-casas .boton-casas:hover {
   border: 4px solid #4d2818;
 }
 
+main section {
+  /*Estilos Video*/
+  /*Estilos Párrafo*/
+}
 main section .video-principal {
   display: flex;
   justify-content: center;
@@ -181,6 +197,7 @@ main section .parrafo-precuela {
   color: #b88a44;
 }
 
+/*Estilos Cards*/
 .section-precuela {
   display: grid;
   grid-template-columns: repeat(6, 1fr);
@@ -204,6 +221,7 @@ main section .parrafo-precuela {
   color: #b88a44;
 }
 
+/*Estilos Carrito de Compras*/
 .carrito-compras {
   display: flex;
   justify-content: flex-end;
@@ -218,6 +236,7 @@ main section .parrafo-precuela {
   height: 35px;
 }
 
+/*Estilos Productos*/
 main .titulo-producto {
   font-family: "Noto Serif TC", serif;
   display: flex;
@@ -274,6 +293,7 @@ main .boton-compras:hover {
   filter: drop-shadow(1px 1px 1px white);
 }
 
+/*Estilos Ventas*/
 .titulo-ventas {
   display: flex;
   justify-content: center;
@@ -291,6 +311,7 @@ main .boton-compras:hover {
   color: #b88a44;
 }
 
+/*Estilos Mapa*/
 .contacto-mapa {
   display: flex;
 }
@@ -300,6 +321,7 @@ main .boton-compras:hover {
   width: 600px;
 }
 
+/*Estilos Formularios*/
 .formulario-ventas {
   display: flex;
   flex-direction: column;
@@ -336,6 +358,7 @@ main .boton-compras:hover {
   border: 2px solid #b88a44;
 }
 
+/*Estilos Botón Modal*/
 .btn {
   width: 100px;
   font-family: "Roboto", sans-serif;
@@ -440,9 +463,8 @@ footer p {
   main .section-casas .imagen-fondo {
     width: 100%;
   }
-  main .contenedor-imagenes-personajes {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
+  main .section-personajes {
+    grid-template-columns: repeat(3, 1fr);
   }
   /*Videos*/
   iframe {
@@ -522,9 +544,16 @@ footer p {
   main .section-casas .imagen-fondo {
     width: 100%;
   }
-  main .contenedor-imagenes-personajes {
+  main .section-personajes {
     grid-template-columns: repeat(2, 1fr);
-    gap: 5px;
+  }
+  main .imagenes-caminantes .imagen-personajes {
+    width: 200px;
+    height: 200px;
+  }
+  main .imagenes-caminantes iframe {
+    width: 700px;
+    height: 400px;
   }
   /*Videos*/
   iframe {
@@ -603,9 +632,16 @@ footer p {
   main .section-casas .imagen-fondo {
     width: 100%;
   }
-  main .contenedor-imagenes-personajes {
+  main .section-personajes {
     grid-template-columns: repeat(1, 1fr);
-    gap: 5px;
+  }
+  main .imagenes-caminantes .imagen-personajes {
+    width: 150px;
+    height: 150px;
+  }
+  main .imagenes-caminantes iframe {
+    width: 450px;
+    height: 400px;
   }
   /*Videos*/
   iframe {

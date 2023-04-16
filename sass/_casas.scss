@@ -1,63 +1,64 @@
-main{
-    .section-casas{
-        padding: 5px;
+main {
+  /*Estilos de cada Casa*/
+  .section-casas {
+    padding: 5px;
+    text-align: center;
+    h2,
+    h3 {
+      font-family: "Noto Serif TC", serif;
+      padding: 5px;
+      color: $colorPrincipal;
+    }
+    .imagen-fondo {
+      @include tamaños(650px, 450px);
+      border: 3px solid $colorTerciario;
+    }
+    article {
+      .parrafos-casas {
+        font-family: "Poppins", sans-serif;
         text-align: center;
-        h2,h3{
-            font-family: "Noto Serif TC", serif;
-             padding: 5px;
-            color: $colorPrincipal;
-        }
-        .imagen-fondo{
-            @include tamaños (650px, 450px);
-            border: 3px solid $colorTerciario;
-        }
-        article{
-            .parrafos-casas{
-                font-family: "Poppins", sans-serif;
-                text-align: center;
-                padding: 15px;
-                color: $colorPrincipal;
-            }
-        }
+        padding: 15px;
+        color: $colorPrincipal;
+      }
     }
- 
+  }
 
-    .contenedor-imagenes-casas{
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: repeat(4, 1fr);
-        gap: 20px;
-        margin: 15px 20px;
-        width: auto;
-        .imagen-casa-serie{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-        }
-        .imagen-casas{
-            @include tamaños (200px, 200px);
-            padding: 5px;
-            justify-self: center;
-            &:hover{
-                width: 250px;
-                transition: 2s;
-                border: 2px outset $colorTerciario;
-            }
-        }
-        .boton-casas{
-            @include tamaños (100px, 30px);
-            margin: 0px 140px;
-            background-color: black;
-            color: $colorPrincipal;
-            border: 2px solid $colorPrincipal;
-            font-family: "Roboto", sans-serif;
-            &:hover{
-                background-color: $colorPrincipal;
-                color: black;
-                font-family: "Roboto", sans-serif;
-                border: 2px solid black;
-            }
-        }
+  /*Estilos de casas.html*/
+  .contenedor-imagenes-casas {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 20px;
+    margin: 15px 20px;
+    width: auto;
+    .imagen-casa-serie {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
     }
-   
+    .imagen-casas {
+      @include tamaños(200px, 200px);
+      padding: 5px;
+      justify-self: center;
+      &:hover {
+        width: 250px;
+        transition: 2s;
+        border: 2px outset $colorTerciario;
+      }
+    }
+    .boton-casas {
+      @include tamaños(100px, 30px);
+      margin: 0px 140px;
+      background-color: black;
+      color: $colorPrincipal;
+      border: 2px solid $colorPrincipal;
+      font-family: "Roboto", sans-serif;
+      &:hover {
+        background-color: $colorPrincipal;
+        color: black;
+        font-family: "Roboto", sans-serif;
+        border: 2px solid black;
+      }
+    }
+  }
 }

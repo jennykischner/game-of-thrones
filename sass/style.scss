@@ -1,3 +1,4 @@
+/*Importación Variables*/
 @import "variables";
 @import "index";
 @import "casas";
@@ -12,7 +13,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap");
 
-
 * {
   margin: 0;
   padding: 0;
@@ -26,443 +26,425 @@ body {
 
 /*Estilos Header*/
 
-header{
-    background-image: url(../img/Imagen-Header.jpg);
-    height: 150px;
-    width: 100%;
-    background-size: cover;
-    .logo{
-        width: 150px;
-        height: 140px;
-    }
-    .navbar-toggler {
-        background-color: white;
-    }
-    .navbar-toggler-icon{
-        background-color: white;
-    }
-      
-    .nav-link {
-        font-family: "Roboto", sans-serif;
-        font-size: 20px;
-        color: white;
-    }
-      
-    .nav-link:hover {
-        color: $colorPrincipal;
-    }
-      
-    .navbar-collapse {
-        justify-content: flex-end;
-        flex-grow: 0;
-    }
+header {
+  background-image: url(../img/Imagen-Header.jpg);
+  height: 150px;
+  width: 100%;
+  background-size: cover;
+  .logo {
+    width: 150px;
+    height: 140px;
+  }
+  .navbar-toggler {
+    background-color: white;
+  }
+  .navbar-toggler-icon {
+    background-color: white;
+  }
 
-}  
+  .nav-link {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: white;
+  }
 
+  .nav-link:hover {
+    color: $colorPrincipal;
+  }
 
+  .navbar-collapse {
+    justify-content: flex-end;
+    flex-grow: 0;
+  }
+}
 
 /*Footer*/
 
-
-footer{
-    background-image: url(../img/Imagen-Footer.jpg);
-    background-size: cover;
-    @include tamaños (100%, 100px);
-    padding: 20px;
-    margin-top: 130px;
-    .iconos-footer{
-        text-align: center;
-        color: white;
-    }
-    p{
-        font-family: "Noto Serif TC", serif;
-    }
+footer {
+  background-image: url(../img/Imagen-Footer.jpg);
+  background-size: cover;
+  @include tamaños(100%, 100px);
+  padding: 20px;
+  margin-top: 130px;
+  .iconos-footer {
+    text-align: center;
+    color: white;
+  }
+  p {
+    font-family: "Noto Serif TC", serif;
+  }
 }
-
 
 /*Medias Queries*/
 
 @media only screen and (max-width: 1024px) {
-    /*Index General*/
+  /*Index General*/
 
-    header{
-       
-        #navbarSupportedContent{
-            ul{
-                .nav-item {
-                    display: flex;
-                    justify-content: flex-end;
-                }      			
-            }	
+  header {
+    #navbarSupportedContent {
+      ul {
+        .nav-item {
+          display: flex;
+          justify-content: flex-end;
         }
-    }	
-
-    main{
-      
-        h1 {
-            font-size: 45px;
-        }
-
-        .section_principal {
-            margin: 20px;
-            width: 75%;
-            height: 250px;    
-        }
-        
-        section{
-            article{
-                .parrafo-principal{
-                    flex-direction: column;
-                }
-            }
-        }
-    
-        .imagenes-emblemas{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-            justify-items:center;
-        }
-       
+      }
     }
-  
-    /*Casas*/
-  
-    main{
-       
-        .contenedor-imagenes-casas {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    }
-    main{
+  }
 
-        .section-casas{
-            h2,
-            h3 {
-                font-size: 20px;
-            }
-
-            .imagen-fondo {
-            width: 100%;
-            }
-        } 
-        .contenedor-imagenes-personajes {
-            grid-template-columns: repeat(2, 1fr);
-            gap: 5px;
-        }
-           
-    }
-       
-    /*Videos*/
-  
-    iframe {
-      width: 100%;
-    }
-  
-    /*Merchandising*/
-  
-    
-    .carrito-compras{
-        justify-content: flex-start;
+  main {
+    h1 {
+      font-size: 45px;
     }
 
-    main{
-        .titulo-producto{
-         padding: 70px;
-         font-size: 40px;
-        }
-        .contenedor-imagen-compra{
-            grid-template-columns: repeat(2, 1fr);
-            gap: 100px;
-        }
-        .imagen-personajes-compra{
-            &:hover{
-                @include tamaños (180px, 180px); 
-            }
-        }
+    .section_principal {
+      margin: 20px;
+      width: 75%;
+      height: 250px;
     }
 
-    /*Precuela*/
-
-    .section-precuela{
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-        justify-items: center;
+    section {
+      article {
+        .parrafo-principal {
+          flex-direction: column;
+        }
+      }
     }
-  
-    /*Contacto*/
-  
-    
-    .parrafo-ventas{
+
+    .imagenes-emblemas {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      justify-items: center;
+    }
+  }
+
+  /*Casas*/
+
+  main {
+    .contenedor-imagenes-casas {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  main {
+    .section-casas {
+      h2,
+      h3 {
         font-size: 20px;
-        margin: 10px;
-    }
+      }
 
-    .contacto-mapa{
-        justify-content: center;
-        .mapa {
-            width: 55%;
-            height: auto;
-            margin: 0px;
-        }
+      .imagen-fondo {
+        width: 100%;
+      }
     }
-    
-   
+    .section-personajes {
+      grid-template-columns: repeat(3, 1fr);
+    }
+  
+  }
+  
+ 
+  /*Videos*/
+
+  iframe {
+    width: 100%;
+  }
+
+  /*Merchandising*/
+
+  .carrito-compras {
+    justify-content: flex-start;
+  }
+
+  main {
+    .titulo-producto {
+      padding: 70px;
+      font-size: 40px;
+    }
+    .contenedor-imagen-compra {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 100px;
+    }
+    .imagen-personajes-compra {
+      &:hover {
+        @include tamaños(180px, 180px);
+      }
+    }
+  }
+
+  /*Precuela*/
+
+  .section-precuela {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+
+  /*Contacto*/
+
+  .parrafo-ventas {
+    font-size: 20px;
+    margin: 10px;
+  }
+
+  .contacto-mapa {
+    justify-content: center;
+    .mapa {
+      width: 55%;
+      height: auto;
+      margin: 0px;
+    }
+  }
 }
-
 
 @media only screen and (max-width: 768px) {
-
-    /*Index General*/
-    header{
-        
-        #navbarSupportedContent{
-            ul{
-                 .nav-item {
-                    display: flex;
-                    justify-content: flex-end;
-                }      			
-            }	
-        }
-    }	
-    main{
-        h1 {
-            font-size: 45px;
-        }
-
-        .section_principal {
-            margin: 20px;
-            width: 75%;
-            height: 250px;    
-        }
-        
-        section{
-            article{
-                .parrafo-principal{
-                    flex-direction: column;
-                }
-            }
-        }
-    
-        .imagenes-emblemas{
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 10px;
-            justify-items:center;
-        }
+  /*Index General*/
+  header {
+    #navbarSupportedContent {
+      ul {
         .nav-item {
-            display: flex;
-            justify-content: flex-end;
+          display: flex;
+          justify-content: flex-end;
         }
+      }
     }
-  
-    /*Casas*/
-  
-    
-    main{
-       
-        .contenedor-imagenes-casas {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    }
-    main{
-
-        .section-casas{
-            h2,
-            h3 {
-                font-size: 20px;
-            }
-
-            .imagen-fondo {
-                width: 100%;
-            }
-        }
-        .contenedor-imagenes-personajes {
-            grid-template-columns: repeat(2, 1fr);
-            gap: 5px;
-        }
-        
-    }   
-    
-       
-    /*Videos*/
-  
-    iframe {
-      width: 100%;
-    }
-  
-    /*Merchandising*/
-  
-    
-    .carrito-compras{
-        justify-content: flex-start;
+  }
+  main {
+    h1 {
+      font-size: 45px;
     }
 
-    main{
-        .titulo-producto{
-         padding: 70px;
-         font-size: 40px;
-        }
-        .contenedor-imagen-compra{
-            grid-template-columns: repeat(2, 1fr);
-            gap: 100px;
-        }
-        .imagen-personajes-compra{
-            &:hover{
-                @include tamaños (180px, 180px); 
-            }
-        }
+    .section_principal {
+      margin: 20px;
+      width: 75%;
+      height: 250px;
     }
 
-    /*Precuela*/
-
-    
-    .section-precuela{
-        grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
-        justify-items: center;
+    section {
+      article {
+        .parrafo-principal {
+          flex-direction: column;
+        }
+      }
     }
-  
-    /*Contacto*/
-  
-    
-    .parrafo-ventas{
+
+    .imagenes-emblemas {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      justify-items: center;
+    }
+    .nav-item {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  /*Casas*/
+
+  main {
+    .contenedor-imagenes-casas {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  main {
+    .section-casas {
+      h2,
+      h3 {
         font-size: 20px;
-        margin: 10px;
-    }
+      }
 
-    .contacto-mapa{
-        justify-content: center;
-        .mapa {
-            width: 55%;
-            height: auto;
-            margin: 0px;
-        }
+      .imagen-fondo {
+        width: 100%;
+      }
     }
+    .section-personajes {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .imagenes-caminantes {
+      
+      .imagen-personajes {
+        @include tamaños(200px, 200px);
+      }
+      iframe {
+        @include tamaños(700px, 400px);
+      }
+    }
+  }
+
+  /*Videos*/
+
+  iframe {
+    width: 100%;
+  }
+
+  /*Merchandising*/
+
+  .carrito-compras {
+    justify-content: flex-start;
+  }
+
+  main {
+    .titulo-producto {
+      padding: 70px;
+      font-size: 40px;
+    }
+    .contenedor-imagen-compra {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 100px;
+    }
+    .imagen-personajes-compra {
+      &:hover {
+        @include tamaños(180px, 180px);
+      }
+    }
+  }
+
+  /*Precuela*/
+
+  .section-precuela {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+
+  /*Contacto*/
+
+  .parrafo-ventas {
+    font-size: 20px;
+    margin: 10px;
+  }
+
+  .contacto-mapa {
+    justify-content: center;
+    .mapa {
+      width: 55%;
+      height: auto;
+      margin: 0px;
+    }
+  }
 }
 
-  
-@media only screen and (max-width: 576px){
-    /*Index General*/
+@media only screen and (max-width: 576px) {
+  /*Index General*/
 
-  
-
-    header{
-        
-        #navbarSupportedContent{
-            ul{
-                .nav-item {
-                    display: flex;
-                    justify-content: flex-end;
-               }      			
-           }	
-       }
-    }	
-    main{
-        h1 {
-            font-size: 40px;
-        }
-   
-        .section_principal {
-            margin: 20px;
-            width: 65%;
-            height: 250px;   
-        }
-       
-        section{
-            article{
-                .parrafo-principal{
-                    flex-direction: column;
-                }
-            }
-        }
-   
-        .imagenes-emblemas{
-            display: grid;
-            grid-template-columns: repeat(1, 1fr);
-            justify-items: center;
-        }
+  header {
+    #navbarSupportedContent {
+      ul {
         .nav-item {
-            display: flex;
-            justify-content: flex-end;
+          display: flex;
+          justify-content: flex-end;
         }
+      }
     }
-   
-    /*Casas*/
-   
-    main{
-      
-        .contenedor-imagenes-casas {
-            grid-template-columns: repeat(1, 1fr);
-        }
+  }
+  main {
+    h1 {
+      font-size: 40px;
     }
 
-    main{
-        .section-casas{
-            h2,
-            h3 {
-                font-size: 20px;
-            }
-   
-            .imagen-fondo {
-                 width: 100%;
-            }
-        }
-        .contenedor-imagenes-personajes {
-            grid-template-columns: repeat(1, 1fr);
-            gap: 5px;
-        
-        }
-    }    
-        
-    /*Videos*/
-   
-    iframe {
-        width: 100%;
+    .section_principal {
+      margin: 20px;
+      width: 65%;
+      height: 250px;
     }
-   
-    /*Merchandising*/
-   
-   
-    .carrito-compras{
-        justify-content: flex-start;
-    }
-   
-    main{
-        .titulo-producto{
-           padding: 70px;
-           font-size: 40px;
-        }
-        .contenedor-imagen-compra{
-            grid-template-columns: repeat(2, 1fr);
-            gap: 80px;
-        }
-    }
-   
-    /*Precuela */
 
-    .section-precuela{
-        grid-template-columns: repeat(1, 1fr);
-        gap: 20px;
-        justify-items: center;
+    section {
+      article {
+        .parrafo-principal {
+          flex-direction: column;
+        }
+      }
     }
-  
-   
-    /*Contacto*/
-   
-   
-    .parrafo-ventas{
+
+    .imagenes-emblemas {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
+      justify-items: center;
+    }
+    .nav-item {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  /*Casas*/
+
+  main {
+    .contenedor-imagenes-casas {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+
+  main {
+    .section-casas {
+      h2,
+      h3 {
         font-size: 20px;
-        margin: 10px;
+      }
+
+      .imagen-fondo {
+        width: 100%;
+      }
     }
-   
-    .contacto-mapa{
-        justify-content: center;
+    .section-personajes {
+      grid-template-columns: repeat(1, 1fr);
     }
-   
-    .mapa {
-        width: 55%;
-        height: auto;
-        margin: 0px;
+    .imagenes-caminantes {
+      
+      .imagen-personajes {
+        @include tamaños(150px, 150px);
+      }
+      iframe {
+        @include tamaños(450px, 400px);
+      }
     }
+  }
+
+  /*Videos*/
+
+  iframe {
+    width: 100%;
+  }
+
+  /*Merchandising*/
+
+  .carrito-compras {
+    justify-content: flex-start;
+  }
+
+  main {
+    .titulo-producto {
+      padding: 70px;
+      font-size: 40px;
+    }
+    .contenedor-imagen-compra {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 80px;
+    }
+  }
+
+  /*Precuela */
+
+  .section-precuela {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 20px;
+    justify-items: center;
+  }
+
+  /*Contacto*/
+
+  .parrafo-ventas {
+    font-size: 20px;
+    margin: 10px;
+  }
+
+  .contacto-mapa {
+    justify-content: center;
+  }
+
+  .mapa {
+    width: 55%;
+    height: auto;
+    margin: 0px;
+  }
 }
